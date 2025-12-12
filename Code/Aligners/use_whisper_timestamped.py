@@ -26,7 +26,7 @@ from scipy.io import wavfile
 # logger = logging.getLogger(__name__) 
 
 base_dir = Path(os.path.dirname(os.path.abspath(__file__))).parent.absolute().__str__()
-_nlp = spacy.load("fr_core_news_sm", disable=["ner"])
+_nlp = spacy.load("en_core_web_sm", disable=["ner"])
 _FORBIDDEN = {"DET", "ADP", "CCONJ", "SCONJ", "PART", "PRON"}
 _logger = logging.getLogger(__name__)
 
@@ -59,7 +59,7 @@ class WhisperTranscriber:
     def __init__(self,
                  model_size: str = "medium",
                  device: Optional[str] = None,
-                 language: str = "fr",
+                 language: str = "en",
                  logger: Optional[logging.Logger] = None
                 ) -> None:
         """
@@ -73,6 +73,8 @@ class WhisperTranscriber:
         """
         self.model_size = model_size
         self.device = device or ("cuda" if torch.cuda.is_available() else "cpu")
+        if self.device == "cuda" and not torch.cuda.is_available():
+             self.device = "cpu"
         self.language = language
         self.model = None
         
@@ -523,7 +525,7 @@ def main(audio_path, out_path, whisper_model="medium", device=None, logger=None)
         transcriber = WhisperTranscriber(
             model_size=whisper_model,
             device="cuda" if device is None else device,
-            language="fr",
+            language="en",
             logger=logger # Pass logger here
         )
 

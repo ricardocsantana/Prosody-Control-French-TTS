@@ -1,0 +1,456 @@
+{
+  "text": " The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.",
+  "segments": [
+    {
+      "id": 0,
+      "seek": 0,
+      "start": 1.35,
+      "end": 3.73,
+      "text": "The stale smell of old beer lingers.",
+      "tokens": [
+        50364,
+        440,
+        342,
+        1220,
+        4316,
+        295,
+        1331,
+        8795,
+        22949,
+        433,
+        13,
+        50555
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.979,
+      "words": [
+        {
+          "text": "The",
+          "start": 1.35,
+          "end": 1.59,
+          "confidence": 0.884
+        },
+        {
+          "text": "stale",
+          "start": 1.59,
+          "end": 1.87,
+          "confidence": 0.999
+        },
+        {
+          "text": "smell",
+          "start": 1.87,
+          "end": 2.21,
+          "confidence": 0.996
+        },
+        {
+          "text": "of",
+          "start": 2.21,
+          "end": 2.51,
+          "confidence": 0.998
+        },
+        {
+          "text": "old",
+          "start": 2.51,
+          "end": 2.81,
+          "confidence": 0.967
+        },
+        {
+          "text": "beer",
+          "start": 2.81,
+          "end": 3.07,
+          "confidence": 0.983
+        },
+        {
+          "text": "lingers.",
+          "start": 3.07,
+          "end": 3.73,
+          "confidence": 0.998
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "seek": 0,
+      "start": 4.63,
+      "end": 6.33,
+      "text": "It takes heat to bring out the odor.",
+      "tokens": [
+        50555,
+        467,
+        2516,
+        3738,
+        281,
+        1565,
+        484,
+        264,
+        41176,
+        13,
+        50682
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.992,
+      "words": [
+        {
+          "text": "It",
+          "start": 4.63,
+          "end": 4.83,
+          "confidence": 0.996
+        },
+        {
+          "text": "takes",
+          "start": 4.83,
+          "end": 5.09,
+          "confidence": 0.998
+        },
+        {
+          "text": "heat",
+          "start": 5.09,
+          "end": 5.33,
+          "confidence": 0.997
+        },
+        {
+          "text": "to",
+          "start": 5.33,
+          "end": 5.55,
+          "confidence": 0.998
+        },
+        {
+          "text": "bring",
+          "start": 5.55,
+          "end": 5.71,
+          "confidence": 0.999
+        },
+        {
+          "text": "out",
+          "start": 5.71,
+          "end": 5.89,
+          "confidence": 0.999
+        },
+        {
+          "text": "the",
+          "start": 5.89,
+          "end": 6.07,
+          "confidence": 0.997
+        },
+        {
+          "text": "odor.",
+          "start": 6.07,
+          "end": 6.33,
+          "confidence": 0.952
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "seek": 0,
+      "start": 7.44,
+      "end": 9.56,
+      "text": "A cold dip restores health and zest.",
+      "tokens": [
+        50682,
+        316,
+        3554,
+        10460,
+        1472,
+        2706,
+        1585,
+        293,
+        37889,
+        13,
+        50835
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.957,
+      "words": [
+        {
+          "text": "A",
+          "start": 7.44,
+          "end": 7.7,
+          "confidence": 0.997
+        },
+        {
+          "text": "cold",
+          "start": 7.7,
+          "end": 7.92,
+          "confidence": 0.992
+        },
+        {
+          "text": "dip",
+          "start": 7.92,
+          "end": 8.14,
+          "confidence": 0.73
+        },
+        {
+          "text": "restores",
+          "start": 8.14,
+          "end": 8.54,
+          "confidence": 0.991
+        },
+        {
+          "text": "[*]",
+          "start": 8.54,
+          "end": 8.72,
+          "confidence": 0.0
+        },
+        {
+          "text": "health",
+          "start": 8.72,
+          "end": 8.84,
+          "confidence": 0.997
+        },
+        {
+          "text": "and",
+          "start": 8.84,
+          "end": 9.14,
+          "confidence": 0.995
+        },
+        {
+          "text": "[*]",
+          "start": 9.14,
+          "end": 9.42,
+          "confidence": 0.0
+        },
+        {
+          "text": "zest.",
+          "start": 9.42,
+          "end": 9.56,
+          "confidence": 0.997
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "seek": 0,
+      "start": 10.54,
+      "end": 12.44,
+      "text": "A salt pickle tastes fine with ham.",
+      "tokens": [
+        50835,
+        316,
+        5139,
+        31433,
+        8666,
+        2489,
+        365,
+        7852,
+        13,
+        50990
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.957,
+      "words": [
+        {
+          "text": "A",
+          "start": 10.54,
+          "end": 10.74,
+          "confidence": 0.998
+        },
+        {
+          "text": "salt",
+          "start": 10.74,
+          "end": 10.98,
+          "confidence": 0.966
+        },
+        {
+          "text": "pickle",
+          "start": 10.98,
+          "end": 11.24,
+          "confidence": 0.807
+        },
+        {
+          "text": "tastes",
+          "start": 11.24,
+          "end": 11.6,
+          "confidence": 0.963
+        },
+        {
+          "text": "fine",
+          "start": 11.6,
+          "end": 11.9,
+          "confidence": 0.999
+        },
+        {
+          "text": "with",
+          "start": 11.9,
+          "end": 12.14,
+          "confidence": 0.999
+        },
+        {
+          "text": "ham.",
+          "start": 12.14,
+          "end": 12.44,
+          "confidence": 0.984
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "seek": 0,
+      "start": 13.36,
+      "end": 15.06,
+      "text": "Tacos al pastor are my favorite.",
+      "tokens": [
+        50990,
+        38848,
+        329,
+        419,
+        21193,
+        366,
+        452,
+        2954,
+        13,
+        51109
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.917,
+      "words": [
+        {
+          "text": "Tacos",
+          "start": 13.36,
+          "end": 13.78,
+          "confidence": 0.873
+        },
+        {
+          "text": "al",
+          "start": 13.78,
+          "end": 13.98,
+          "confidence": 0.892
+        },
+        {
+          "text": "pastor",
+          "start": 13.98,
+          "end": 14.3,
+          "confidence": 0.818
+        },
+        {
+          "text": "are",
+          "start": 14.3,
+          "end": 14.5,
+          "confidence": 0.997
+        },
+        {
+          "text": "my",
+          "start": 14.5,
+          "end": 14.72,
+          "confidence": 0.999
+        },
+        {
+          "text": "favorite.",
+          "start": 14.72,
+          "end": 15.06,
+          "confidence": 0.986
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "seek": 0,
+      "start": 16.22,
+      "end": 18.56,
+      "text": "A zestful food is the hot cross bun.",
+      "tokens": [
+        51109,
+        316,
+        37889,
+        906,
+        1755,
+        307,
+        264,
+        2368,
+        3278,
+        6702,
+        13,
+        51229
+      ],
+      "temperature": 0.0,
+      "avg_logprob": -0.19109780041139518,
+      "compression_ratio": 1.4210526315789473,
+      "no_speech_prob": 0.07596355676651001,
+      "confidence": 0.915,
+      "words": [
+        {
+          "text": "A",
+          "start": 16.22,
+          "end": 16.42,
+          "confidence": 0.693
+        },
+        {
+          "text": "zestful",
+          "start": 16.42,
+          "end": 16.9,
+          "confidence": 0.977
+        },
+        {
+          "text": "food",
+          "start": 16.9,
+          "end": 17.24,
+          "confidence": 0.997
+        },
+        {
+          "text": "is",
+          "start": 17.24,
+          "end": 17.52,
+          "confidence": 0.996
+        },
+        {
+          "text": "the",
+          "start": 17.52,
+          "end": 17.78,
+          "confidence": 0.99
+        },
+        {
+          "text": "hot",
+          "start": 17.78,
+          "end": 18.0,
+          "confidence": 0.741
+        },
+        {
+          "text": "cross",
+          "start": 18.0,
+          "end": 18.32,
+          "confidence": 0.961
+        },
+        {
+          "text": "bun.",
+          "start": 18.32,
+          "end": 18.56,
+          "confidence": 0.972
+        }
+      ]
+    }
+  ],
+  "language": "en",
+  "speech_activity": [
+    {
+      "start": 0.85,
+      "end": 4.05
+    },
+    {
+      "start": 4.15,
+      "end": 6.8
+    },
+    {
+      "start": 6.95,
+      "end": 15.5
+    },
+    {
+      "start": 15.7,
+      "end": 19.05
+    }
+  ]
+}

@@ -3,7 +3,10 @@ import textgrid
 import re
 import sys
 import glob 
-import logger
+try:
+    import logger
+except ImportError:
+    from Preprocessing import logger
 
 # ✅ Seuil pour ignorer les très courtes pauses en début de phrase
 INITIAL_PAUSE_THRESHOLD = 150
@@ -162,8 +165,8 @@ def generate_ssml(aligned_sequence):
     full_text = " ".join(text_parts)
     
     # Créer le SSML complet au format attendu par Azure
-    ssml = f"""<speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="fr-FR">
-    <voice name="fr-FR-HenriNeural">
+    ssml = f"""<speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
+    <voice name="en-US-AndrewNeural">
         {full_text}
     </voice>
 </speak>"""

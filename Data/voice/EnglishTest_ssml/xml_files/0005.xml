@@ -1,0 +1,1 @@
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value="0"/><prosody pitch="+1.17%" rate="-3.58%" volume="-10.00%">A zestful food is the hot cross bun.</prosody><mstts:silence type="Tailing-exact" value="0"/></voice></speak>

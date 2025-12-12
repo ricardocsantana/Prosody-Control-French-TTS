@@ -7,14 +7,12 @@ import re
 def clean_text(text):
     return re.sub(r'[,;]', '', text)
 
-def main(Input_dir, audio_dir, audio_dir_microsoft, transcription_dir, transcription_dir_microsoft, api_key, voice, style, styledegree, clean_transcription=False):
+def main(Input_dir, audio_dir, audio_dir_microsoft, transcription_dir, transcription_dir_microsoft, api_key, voice, style, styledegree, clean_transcription=False, region='eastus'):
     os.makedirs(transcription_dir_microsoft, exist_ok=True)
     os.makedirs(audio_dir_microsoft, exist_ok=True)
 
     audio_files = os.listdir(audio_dir)
     names = [n[:-4] for n in audio_files if n.endswith(".wav")]
-
-    region = 'francecentral'
 
     for n in names:
         transcription_path = os.path.join(transcription_dir, n + ".txt")
@@ -34,7 +32,7 @@ def main(Input_dir, audio_dir, audio_dir_microsoft, transcription_dir, transcrip
 
             # On crée l'audio
             text_ssml = f"""
-            <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang='fr-FR'>
+            <speak version='1.0' xmlns='http://www.w3.org/2001/10/synthesis' xmlns:mstts="https://www.w3.org/2001/mstts" xml:lang='en-US'>
                 <voice name='{voice}'>
                     {f"<mstts:express-as style='{style}' styledegree='{styledegree}'>" if style else ""}
                         {text}

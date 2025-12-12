@@ -1,0 +1,1628 @@
+2025-12-12 22:12:15,684 - INFO - --- Starting pipeline for: EnglishTest ---
+2025-12-12 22:12:15,699 - INFO - >>> Align & Transcribe: WhisperTS
+2025-12-12 22:12:16,177 - DEBUG - Démarrage du script avec audio_path=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/audio, out_path=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files
+2025-12-12 22:12:16,177 - DEBUG - Vérification des dépendances...
+2025-12-12 22:12:16,177 - DEBUG - PyTorch version: 2.8.0
+2025-12-12 22:12:16,177 - DEBUG - whisper_timestamped version: 1.15.9
+2025-12-12 22:12:16,177 - DEBUG - textgrid version: version inconnue
+2025-12-12 22:12:16,177 - DEBUG - Python version: 3.13.11 | packaged by conda-forge | (main, Dec  6 2025, 11:28:54) [Clang 19.1.7 ]
+2025-12-12 22:12:16,177 - DEBUG - Python executable: /Users/ricardo/opt/miniconda3/envs/phd/bin/python
+2025-12-12 22:12:16,177 - DEBUG - Contenu du dossier audio: ['segment.wav']
+2025-12-12 22:12:16,177 - INFO - Initialisation with model=medium, device=cpu
+2025-12-12 22:12:16,177 - DEBUG - Infos système - CUDA available: False
+2025-12-12 22:12:16,177 - DEBUG - Fichiers trouvés dans le dossier: 1
+2025-12-12 22:12:16,177 - DEBUG - Fichier WAV détecté: segment.wav
+2025-12-12 22:12:16,177 - INFO - Nombre de fichiers .wav trouvés: 1
+2025-12-12 22:12:16,177 - DEBUG - Création des dossiers de sortie
+2025-12-12 22:12:16,177 - DEBUG - Dossier de transcription créé: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription
+2025-12-12 22:12:16,177 - DEBUG - Dossier TextGrid créé: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files
+2025-12-12 22:12:16,177 - INFO - Traitement du fichier 1/1: segment
+2025-12-12 22:12:16,177 - DEBUG - Chemins de sortie: JSON=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.json, TXT=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.txt
+2025-12-12 22:12:16,180 - DEBUG - Fichier segment: RMS=1837.8365478515625, silence_ratio=0.61
+2025-12-12 22:12:16,180 - INFO - Processing File: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/audio/segment.wav
+2025-12-12 22:12:16,180 - DEBUG - Size file: 3249924 octets
+2025-12-12 22:12:16,182 - DEBUG - Audio check: RMS=1837.8365478515625, silence_ratio=0.61
+2025-12-12 22:12:16,182 - DEBUG - Starting audio loading
+2025-12-12 22:12:16,261 - DEBUG - Audio loaded successfully: 293699 échantillons
+2025-12-12 22:12:16,262 - DEBUG - Audio min/max values: -1.00/0.62
+2025-12-12 22:12:16,262 - INFO - Loading the model  medium
+2025-12-12 22:12:16,262 - DEBUG - Available memory before loading: CUDA non available
+2025-12-12 22:12:21,971 - INFO - Model successfully loaded
+2025-12-12 22:12:21,971 - DEBUG - Available memory after loading: CUDA non available
+2025-12-12 22:12:21,971 - DEBUG - Configuration transcription: {'language': 'en', 'vad': 'auditok', 'compute_word_confidence': True, 'detect_disfluencies': True, 'trust_whisper_timestamps': True}
+2025-12-12 22:12:21,971 - INFO - Début de la transcription
+2025-12-12 22:12:21,971 - DEBUG - Mémoire avant transcription: CUDA non available
+2025-12-12 22:12:22,069 - DEBUG - matplotlib data path: /Users/ricardo/opt/miniconda3/envs/phd/lib/python3.13/site-packages/matplotlib/mpl-data
+2025-12-12 22:12:22,072 - DEBUG - CONFIGDIR=/Users/ricardo/.matplotlib
+2025-12-12 22:12:22,073 - DEBUG - interactive is False
+2025-12-12 22:12:22,073 - DEBUG - platform is darwin
+2025-12-12 22:12:22,098 - DEBUG - CACHEDIR=/Users/ricardo/.matplotlib
+2025-12-12 22:12:22,100 - DEBUG - Using fontManager instance from /Users/ricardo/.matplotlib/fontlist-v390.json
+2025-12-12 22:12:25,844 - DEBUG - Add segment 1 at step 14:
+	<|transcribe|><|0.00|> The stale smell of old beer lingers.<|3.00|>
+2025-12-12 22:12:27,077 - DEBUG - Add segment 2 at step 25:
+	<|3.00|><|3.00|> It takes heat to bring out the odor.<|6.00|>
+2025-12-12 22:12:28,271 - DEBUG - Add segment 3 at step 36:
+	<|6.00|><|6.00|> A cold dip restores health and zest.<|9.00|>
+2025-12-12 22:12:29,519 - DEBUG - Add segment 4 at step 46:
+	<|9.00|><|9.00|> A salt pickle tastes fine with ham.<|12.00|>
+2025-12-12 22:12:30,671 - DEBUG - Add segment 5 at step 56:
+	<|12.00|><|12.00|> Tacos al pastor are my favorite.<|14.00|>
+2025-12-12 22:12:32,023 - DEBUG - Add segment 6 at step 67:
+	<|14.00|><|14.00|> A zestful food is the hot cross bun.<|17.00|>
+2025-12-12 22:12:32,042 - DEBUG - Compile results
+2025-12-12 22:12:32,043 - INFO - Transcription ended
+2025-12-12 22:12:32,043 - DEBUG - Memomry after transcription: CUDA non available
+2025-12-12 22:12:32,043 - DEBUG - Number of segments: 6
+2025-12-12 22:12:32,043 - DEBUG - Total number of: 44
+2025-12-12 22:12:32,043 - DEBUG - First segment:  The stale smell of old beer lingers....
+2025-12-12 22:12:32,043 - DEBUG - Last segment:  A zestful food is the hot cross bun....
+2025-12-12 22:12:32,044 - DEBUG - Conversion JSON -> TextGrid: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_raw_json/segment.raw.json
+2025-12-12 22:12:32,044 - DEBUG - JSON chargé avec succès: 6 segments
+2025-12-12 22:12:32,044 - DEBUG - Traitement segment: 1.32s -> 3.70s
+2025-12-12 22:12:32,044 - DEBUG - Ajout silence: 0.000 -> 1.320
+2025-12-12 22:12:32,044 - DEBUG - Ajout mot: 'The' (1.320 -> 1.600)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'stale' (1.600 -> 2.000)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'smell' (2.000 -> 2.340)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'of' (2.340 -> 2.620)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'old' (2.620 -> 2.840)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'beer' (2.840 -> 3.100)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'lingers.' (3.100 -> 3.700)
+2025-12-12 22:12:32,045 - DEBUG - Traitement segment: 4.40s -> 6.30s
+2025-12-12 22:12:32,045 - DEBUG - Ajout silence: 3.700 -> 4.400
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'It' (4.400 -> 4.580)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'takes' (4.580 -> 4.900)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'heat' (4.900 -> 5.200)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'to' (5.200 -> 5.440)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'bring' (5.440 -> 5.620)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'out' (5.620 -> 5.860)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'the' (5.860 -> 6.020)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'odor.' (6.020 -> 6.300)
+2025-12-12 22:12:32,045 - DEBUG - Traitement segment: 7.06s -> 9.44s
+2025-12-12 22:12:32,045 - DEBUG - Ajout silence: 6.300 -> 7.060
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'A' (7.060 -> 7.300)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'cold' (7.300 -> 7.600)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'dip' (7.600 -> 7.920)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'restores' (7.920 -> 8.500)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'health' (8.500 -> 8.840)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'and' (8.840 -> 9.060)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: '[*]' (9.060 -> 9.280)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'zest.' (9.280 -> 9.440)
+2025-12-12 22:12:32,045 - DEBUG - Traitement segment: 10.02s -> 12.12s
+2025-12-12 22:12:32,045 - DEBUG - Ajout silence: 9.440 -> 10.020
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'A' (10.020 -> 10.260)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'salt' (10.260 -> 10.580)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'pickle' (10.580 -> 10.980)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'tastes' (10.980 -> 11.340)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'fine' (11.340 -> 11.620)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'with' (11.620 -> 11.840)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'ham.' (11.840 -> 12.120)
+2025-12-12 22:12:32,045 - DEBUG - Traitement segment: 12.68s -> 14.46s
+2025-12-12 22:12:32,045 - DEBUG - Ajout silence: 12.120 -> 12.680
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'Tacos' (12.680 -> 13.080)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'al' (13.080 -> 13.280)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'pastor' (13.280 -> 13.620)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'are' (13.620 -> 13.840)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'my' (13.840 -> 14.060)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'favorite.' (14.060 -> 14.460)
+2025-12-12 22:12:32,045 - DEBUG - Traitement segment: 15.20s -> 17.56s
+2025-12-12 22:12:32,045 - DEBUG - Ajout silence: 14.460 -> 15.200
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'A' (15.200 -> 15.380)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'zestful' (15.380 -> 15.800)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'food' (15.800 -> 16.140)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'is' (16.140 -> 16.480)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'the' (16.480 -> 16.700)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'hot' (16.700 -> 16.940)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'cross' (16.940 -> 17.240)
+2025-12-12 22:12:32,045 - DEBUG - Ajout mot: 'bun.' (17.240 -> 17.560)
+2025-12-12 22:12:32,045 - DEBUG - TextGrid créé: 44 mots, 0 intervalles corrigés, durée totale: 17.560s
+2025-12-12 22:12:32,050 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:32,050 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,050 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,050 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,050 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:32,051 - DEBUG - Texte nettoyé: ' The stale smell of old beer lingers.' -> 'The stale smell of old beer lingers.'
+2025-12-12 22:12:32,052 - DEBUG - >>> remove_spurious_commas input: 'The'
+2025-12-12 22:12:32,052 - DEBUG - >>> tokens+POS: [('The', 'PRON')]
+2025-12-12 22:12:32,052 - DEBUG -     checking tok 'The' (pos=PRON)
+2025-12-12 22:12:32,052 - DEBUG - >>> remove_spurious_commas output: 'The'
+2025-12-12 22:12:32,053 - DEBUG - >>> remove_spurious_commas input: 'stale'
+2025-12-12 22:12:32,053 - DEBUG - >>> tokens+POS: [('stale', 'ADJ')]
+2025-12-12 22:12:32,053 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:32,053 - DEBUG - >>> remove_spurious_commas output: 'stale'
+2025-12-12 22:12:32,054 - DEBUG - >>> remove_spurious_commas input: 'smell'
+2025-12-12 22:12:32,054 - DEBUG - >>> tokens+POS: [('smell', 'NOUN')]
+2025-12-12 22:12:32,054 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:32,054 - DEBUG - >>> remove_spurious_commas output: 'smell'
+2025-12-12 22:12:32,055 - DEBUG - >>> remove_spurious_commas input: 'of'
+2025-12-12 22:12:32,055 - DEBUG - >>> tokens+POS: [('of', 'ADP')]
+2025-12-12 22:12:32,055 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:32,055 - DEBUG - >>> remove_spurious_commas output: 'of'
+2025-12-12 22:12:32,056 - DEBUG - >>> remove_spurious_commas input: 'old'
+2025-12-12 22:12:32,056 - DEBUG - >>> tokens+POS: [('old', 'ADJ')]
+2025-12-12 22:12:32,056 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:32,056 - DEBUG - >>> remove_spurious_commas output: 'old'
+2025-12-12 22:12:32,057 - DEBUG - >>> remove_spurious_commas input: 'beer'
+2025-12-12 22:12:32,057 - DEBUG - >>> tokens+POS: [('beer', 'NOUN')]
+2025-12-12 22:12:32,057 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:32,057 - DEBUG - >>> remove_spurious_commas output: 'beer'
+2025-12-12 22:12:32,058 - DEBUG - >>> remove_spurious_commas input: 'lingers.'
+2025-12-12 22:12:32,058 - DEBUG - >>> tokens+POS: [('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,058 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,058 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,058 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,058 - DEBUG - >>> remove_spurious_commas output: 'lingers.'
+2025-12-12 22:12:32,060 - DEBUG - >>> remove_spurious_commas input: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:32,060 - DEBUG - >>> tokens+POS: [('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,060 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,060 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,060 - DEBUG - >>> remove_spurious_commas output: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:32,060 - DEBUG - Texte nettoyé: ' It takes heat to bring out the odor.' -> 'It takes heat to bring out the odor.'
+2025-12-12 22:12:32,061 - DEBUG - >>> remove_spurious_commas input: 'It'
+2025-12-12 22:12:32,061 - DEBUG - >>> tokens+POS: [('It', 'PRON')]
+2025-12-12 22:12:32,061 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:32,061 - DEBUG - >>> remove_spurious_commas output: 'It'
+2025-12-12 22:12:32,062 - DEBUG - >>> remove_spurious_commas input: 'takes'
+2025-12-12 22:12:32,062 - DEBUG - >>> tokens+POS: [('takes', 'VERB')]
+2025-12-12 22:12:32,062 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:32,062 - DEBUG - >>> remove_spurious_commas output: 'takes'
+2025-12-12 22:12:32,063 - DEBUG - >>> remove_spurious_commas input: 'heat'
+2025-12-12 22:12:32,063 - DEBUG - >>> tokens+POS: [('heat', 'NOUN')]
+2025-12-12 22:12:32,063 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:32,063 - DEBUG - >>> remove_spurious_commas output: 'heat'
+2025-12-12 22:12:32,064 - DEBUG - >>> remove_spurious_commas input: 'to'
+2025-12-12 22:12:32,064 - DEBUG - >>> tokens+POS: [('to', 'PART')]
+2025-12-12 22:12:32,064 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:32,064 - DEBUG - >>> remove_spurious_commas output: 'to'
+2025-12-12 22:12:32,065 - DEBUG - >>> remove_spurious_commas input: 'bring'
+2025-12-12 22:12:32,065 - DEBUG - >>> tokens+POS: [('bring', 'VERB')]
+2025-12-12 22:12:32,065 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:32,065 - DEBUG - >>> remove_spurious_commas output: 'bring'
+2025-12-12 22:12:32,066 - DEBUG - >>> remove_spurious_commas input: 'out'
+2025-12-12 22:12:32,066 - DEBUG - >>> tokens+POS: [('out', 'ADV')]
+2025-12-12 22:12:32,066 - DEBUG -     checking tok 'out' (pos=ADV)
+2025-12-12 22:12:32,066 - DEBUG - >>> remove_spurious_commas output: 'out'
+2025-12-12 22:12:32,067 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:32,068 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:32,068 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:32,068 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:32,069 - DEBUG - >>> remove_spurious_commas input: 'odor.'
+2025-12-12 22:12:32,069 - DEBUG - >>> tokens+POS: [('odor', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,069 - DEBUG -     checking tok 'odor' (pos=PROPN)
+2025-12-12 22:12:32,069 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,069 - DEBUG -       prev tok 'odor' (pos=PROPN)
+2025-12-12 22:12:32,069 - DEBUG - >>> remove_spurious_commas output: 'odor.'
+2025-12-12 22:12:32,071 - DEBUG - >>> remove_spurious_commas input: 'A cold dip restores health and zest.'
+2025-12-12 22:12:32,071 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,071 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,071 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,071 - DEBUG - >>> remove_spurious_commas output: 'A cold dip restores health and zest.'
+2025-12-12 22:12:32,071 - DEBUG - Texte nettoyé: ' A cold dip restores health and zest.' -> 'A cold dip restores health and zest.'
+2025-12-12 22:12:32,072 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,072 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,072 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,072 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,073 - DEBUG - >>> remove_spurious_commas input: 'cold'
+2025-12-12 22:12:32,073 - DEBUG - >>> tokens+POS: [('cold', 'ADJ')]
+2025-12-12 22:12:32,073 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:32,073 - DEBUG - >>> remove_spurious_commas output: 'cold'
+2025-12-12 22:12:32,074 - DEBUG - >>> remove_spurious_commas input: 'dip'
+2025-12-12 22:12:32,074 - DEBUG - >>> tokens+POS: [('dip', 'PROPN')]
+2025-12-12 22:12:32,074 - DEBUG -     checking tok 'dip' (pos=PROPN)
+2025-12-12 22:12:32,074 - DEBUG - >>> remove_spurious_commas output: 'dip'
+2025-12-12 22:12:32,075 - DEBUG - >>> remove_spurious_commas input: 'restores'
+2025-12-12 22:12:32,075 - DEBUG - >>> tokens+POS: [('restores', 'NOUN')]
+2025-12-12 22:12:32,075 - DEBUG -     checking tok 'restores' (pos=NOUN)
+2025-12-12 22:12:32,075 - DEBUG - >>> remove_spurious_commas output: 'restores'
+2025-12-12 22:12:32,076 - DEBUG - >>> remove_spurious_commas input: 'health'
+2025-12-12 22:12:32,076 - DEBUG - >>> tokens+POS: [('health', 'NOUN')]
+2025-12-12 22:12:32,076 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:32,076 - DEBUG - >>> remove_spurious_commas output: 'health'
+2025-12-12 22:12:32,077 - DEBUG - >>> remove_spurious_commas input: 'and'
+2025-12-12 22:12:32,077 - DEBUG - >>> tokens+POS: [('and', 'CCONJ')]
+2025-12-12 22:12:32,077 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:32,077 - DEBUG - >>> remove_spurious_commas output: 'and'
+2025-12-12 22:12:32,078 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:32,078 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:32,078 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:32,078 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:32,078 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:32,078 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:32,080 - DEBUG - >>> remove_spurious_commas input: 'zest.'
+2025-12-12 22:12:32,080 - DEBUG - >>> tokens+POS: [('zest', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,080 - DEBUG -     checking tok 'zest' (pos=ADJ)
+2025-12-12 22:12:32,080 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,080 - DEBUG -       prev tok 'zest' (pos=ADJ)
+2025-12-12 22:12:32,080 - DEBUG - >>> remove_spurious_commas output: 'zest.'
+2025-12-12 22:12:32,082 - DEBUG - >>> remove_spurious_commas input: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:32,082 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,082 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,082 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,082 - DEBUG - >>> remove_spurious_commas output: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:32,082 - DEBUG - Texte nettoyé: ' A salt pickle tastes fine with ham.' -> 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:32,083 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,083 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,083 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,083 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,084 - DEBUG - >>> remove_spurious_commas input: 'salt'
+2025-12-12 22:12:32,084 - DEBUG - >>> tokens+POS: [('salt', 'NOUN')]
+2025-12-12 22:12:32,084 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:32,084 - DEBUG - >>> remove_spurious_commas output: 'salt'
+2025-12-12 22:12:32,085 - DEBUG - >>> remove_spurious_commas input: 'pickle'
+2025-12-12 22:12:32,085 - DEBUG - >>> tokens+POS: [('pickle', 'PROPN')]
+2025-12-12 22:12:32,085 - DEBUG -     checking tok 'pickle' (pos=PROPN)
+2025-12-12 22:12:32,085 - DEBUG - >>> remove_spurious_commas output: 'pickle'
+2025-12-12 22:12:32,086 - DEBUG - >>> remove_spurious_commas input: 'tastes'
+2025-12-12 22:12:32,086 - DEBUG - >>> tokens+POS: [('tastes', 'VERB')]
+2025-12-12 22:12:32,086 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:32,086 - DEBUG - >>> remove_spurious_commas output: 'tastes'
+2025-12-12 22:12:32,087 - DEBUG - >>> remove_spurious_commas input: 'fine'
+2025-12-12 22:12:32,087 - DEBUG - >>> tokens+POS: [('fine', 'ADJ')]
+2025-12-12 22:12:32,087 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:32,087 - DEBUG - >>> remove_spurious_commas output: 'fine'
+2025-12-12 22:12:32,088 - DEBUG - >>> remove_spurious_commas input: 'with'
+2025-12-12 22:12:32,088 - DEBUG - >>> tokens+POS: [('with', 'ADP')]
+2025-12-12 22:12:32,088 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:32,088 - DEBUG - >>> remove_spurious_commas output: 'with'
+2025-12-12 22:12:32,089 - DEBUG - >>> remove_spurious_commas input: 'ham.'
+2025-12-12 22:12:32,089 - DEBUG - >>> tokens+POS: [('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,089 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,089 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,089 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,089 - DEBUG - >>> remove_spurious_commas output: 'ham.'
+2025-12-12 22:12:32,090 - DEBUG - >>> remove_spurious_commas input: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:32,090 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,090 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,090 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,090 - DEBUG - >>> remove_spurious_commas output: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:32,090 - DEBUG - Texte nettoyé: ' Tacos al pastor are my favorite.' -> 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:32,091 - DEBUG - >>> remove_spurious_commas input: 'Tacos'
+2025-12-12 22:12:32,091 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN')]
+2025-12-12 22:12:32,091 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:32,091 - DEBUG - >>> remove_spurious_commas output: 'Tacos'
+2025-12-12 22:12:32,092 - DEBUG - >>> remove_spurious_commas input: 'al'
+2025-12-12 22:12:32,093 - DEBUG - >>> tokens+POS: [('al', 'PROPN')]
+2025-12-12 22:12:32,093 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:32,093 - DEBUG - >>> remove_spurious_commas output: 'al'
+2025-12-12 22:12:32,093 - DEBUG - >>> remove_spurious_commas input: 'pastor'
+2025-12-12 22:12:32,093 - DEBUG - >>> tokens+POS: [('pastor', 'NOUN')]
+2025-12-12 22:12:32,094 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:32,094 - DEBUG - >>> remove_spurious_commas output: 'pastor'
+2025-12-12 22:12:32,094 - DEBUG - >>> remove_spurious_commas input: 'are'
+2025-12-12 22:12:32,094 - DEBUG - >>> tokens+POS: [('are', 'AUX')]
+2025-12-12 22:12:32,094 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:32,094 - DEBUG - >>> remove_spurious_commas output: 'are'
+2025-12-12 22:12:32,095 - DEBUG - >>> remove_spurious_commas input: 'my'
+2025-12-12 22:12:32,095 - DEBUG - >>> tokens+POS: [('my', 'PRON')]
+2025-12-12 22:12:32,095 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:32,095 - DEBUG - >>> remove_spurious_commas output: 'my'
+2025-12-12 22:12:32,096 - DEBUG - >>> remove_spurious_commas input: 'favorite.'
+2025-12-12 22:12:32,096 - DEBUG - >>> tokens+POS: [('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,096 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,096 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,096 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,096 - DEBUG - >>> remove_spurious_commas output: 'favorite.'
+2025-12-12 22:12:32,098 - DEBUG - >>> remove_spurious_commas input: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,098 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,098 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,098 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,098 - DEBUG - >>> remove_spurious_commas output: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,098 - DEBUG - Texte nettoyé: ' A zestful food is the hot cross bun.' -> 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,099 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,099 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,099 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,099 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,100 - DEBUG - >>> remove_spurious_commas input: 'zestful'
+2025-12-12 22:12:32,100 - DEBUG - >>> tokens+POS: [('zestful', 'ADJ')]
+2025-12-12 22:12:32,100 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:32,100 - DEBUG - >>> remove_spurious_commas output: 'zestful'
+2025-12-12 22:12:32,101 - DEBUG - >>> remove_spurious_commas input: 'food'
+2025-12-12 22:12:32,101 - DEBUG - >>> tokens+POS: [('food', 'NOUN')]
+2025-12-12 22:12:32,101 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:32,101 - DEBUG - >>> remove_spurious_commas output: 'food'
+2025-12-12 22:12:32,102 - DEBUG - >>> remove_spurious_commas input: 'is'
+2025-12-12 22:12:32,102 - DEBUG - >>> tokens+POS: [('is', 'AUX')]
+2025-12-12 22:12:32,102 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:32,102 - DEBUG - >>> remove_spurious_commas output: 'is'
+2025-12-12 22:12:32,103 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:32,103 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:32,103 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:32,103 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:32,104 - DEBUG - >>> remove_spurious_commas input: 'hot'
+2025-12-12 22:12:32,104 - DEBUG - >>> tokens+POS: [('hot', 'ADJ')]
+2025-12-12 22:12:32,104 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:32,104 - DEBUG - >>> remove_spurious_commas output: 'hot'
+2025-12-12 22:12:32,105 - DEBUG - >>> remove_spurious_commas input: 'cross'
+2025-12-12 22:12:32,105 - DEBUG - >>> tokens+POS: [('cross', 'VERB')]
+2025-12-12 22:12:32,105 - DEBUG -     checking tok 'cross' (pos=VERB)
+2025-12-12 22:12:32,105 - DEBUG - >>> remove_spurious_commas output: 'cross'
+2025-12-12 22:12:32,106 - DEBUG - >>> remove_spurious_commas input: 'bun.'
+2025-12-12 22:12:32,106 - DEBUG - >>> tokens+POS: [('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,106 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,106 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,106 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,106 - DEBUG - >>> remove_spurious_commas output: 'bun.'
+2025-12-12 22:12:32,106 - DEBUG - clean transcription and save
+2025-12-12 22:12:32,107 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:32,107 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,107 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:32,107 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,108 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,108 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,108 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:32,109 - DEBUG - >>> remove_spurious_commas input: 'The'
+2025-12-12 22:12:32,109 - DEBUG - >>> tokens+POS: [('The', 'PRON')]
+2025-12-12 22:12:32,109 - DEBUG -     checking tok 'The' (pos=PRON)
+2025-12-12 22:12:32,109 - DEBUG - >>> remove_spurious_commas output: 'The'
+2025-12-12 22:12:32,110 - DEBUG - >>> remove_spurious_commas input: 'stale'
+2025-12-12 22:12:32,110 - DEBUG - >>> tokens+POS: [('stale', 'ADJ')]
+2025-12-12 22:12:32,110 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:32,110 - DEBUG - >>> remove_spurious_commas output: 'stale'
+2025-12-12 22:12:32,111 - DEBUG - >>> remove_spurious_commas input: 'smell'
+2025-12-12 22:12:32,111 - DEBUG - >>> tokens+POS: [('smell', 'NOUN')]
+2025-12-12 22:12:32,111 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:32,111 - DEBUG - >>> remove_spurious_commas output: 'smell'
+2025-12-12 22:12:32,112 - DEBUG - >>> remove_spurious_commas input: 'of'
+2025-12-12 22:12:32,112 - DEBUG - >>> tokens+POS: [('of', 'ADP')]
+2025-12-12 22:12:32,112 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:32,112 - DEBUG - >>> remove_spurious_commas output: 'of'
+2025-12-12 22:12:32,113 - DEBUG - >>> remove_spurious_commas input: 'old'
+2025-12-12 22:12:32,113 - DEBUG - >>> tokens+POS: [('old', 'ADJ')]
+2025-12-12 22:12:32,113 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:32,113 - DEBUG - >>> remove_spurious_commas output: 'old'
+2025-12-12 22:12:32,114 - DEBUG - >>> remove_spurious_commas input: 'beer'
+2025-12-12 22:12:32,114 - DEBUG - >>> tokens+POS: [('beer', 'NOUN')]
+2025-12-12 22:12:32,114 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:32,114 - DEBUG - >>> remove_spurious_commas output: 'beer'
+2025-12-12 22:12:32,115 - DEBUG - >>> remove_spurious_commas input: 'lingers.'
+2025-12-12 22:12:32,115 - DEBUG - >>> tokens+POS: [('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,115 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,115 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,115 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,115 - DEBUG - >>> remove_spurious_commas output: 'lingers.'
+2025-12-12 22:12:32,116 - DEBUG - >>> remove_spurious_commas input: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:32,116 - DEBUG - >>> tokens+POS: [('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,116 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,116 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,116 - DEBUG - >>> remove_spurious_commas output: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:32,117 - DEBUG - >>> remove_spurious_commas input: 'It'
+2025-12-12 22:12:32,117 - DEBUG - >>> tokens+POS: [('It', 'PRON')]
+2025-12-12 22:12:32,118 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:32,118 - DEBUG - >>> remove_spurious_commas output: 'It'
+2025-12-12 22:12:32,119 - DEBUG - >>> remove_spurious_commas input: 'takes'
+2025-12-12 22:12:32,119 - DEBUG - >>> tokens+POS: [('takes', 'VERB')]
+2025-12-12 22:12:32,119 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:32,119 - DEBUG - >>> remove_spurious_commas output: 'takes'
+2025-12-12 22:12:32,120 - DEBUG - >>> remove_spurious_commas input: 'heat'
+2025-12-12 22:12:32,120 - DEBUG - >>> tokens+POS: [('heat', 'NOUN')]
+2025-12-12 22:12:32,120 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:32,120 - DEBUG - >>> remove_spurious_commas output: 'heat'
+2025-12-12 22:12:32,121 - DEBUG - >>> remove_spurious_commas input: 'to'
+2025-12-12 22:12:32,121 - DEBUG - >>> tokens+POS: [('to', 'PART')]
+2025-12-12 22:12:32,121 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:32,121 - DEBUG - >>> remove_spurious_commas output: 'to'
+2025-12-12 22:12:32,122 - DEBUG - >>> remove_spurious_commas input: 'bring'
+2025-12-12 22:12:32,122 - DEBUG - >>> tokens+POS: [('bring', 'VERB')]
+2025-12-12 22:12:32,122 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:32,122 - DEBUG - >>> remove_spurious_commas output: 'bring'
+2025-12-12 22:12:32,123 - DEBUG - >>> remove_spurious_commas input: 'out'
+2025-12-12 22:12:32,123 - DEBUG - >>> tokens+POS: [('out', 'ADV')]
+2025-12-12 22:12:32,123 - DEBUG -     checking tok 'out' (pos=ADV)
+2025-12-12 22:12:32,123 - DEBUG - >>> remove_spurious_commas output: 'out'
+2025-12-12 22:12:32,124 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:32,124 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:32,124 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:32,124 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:32,125 - DEBUG - >>> remove_spurious_commas input: 'odor.'
+2025-12-12 22:12:32,125 - DEBUG - >>> tokens+POS: [('odor', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,125 - DEBUG -     checking tok 'odor' (pos=PROPN)
+2025-12-12 22:12:32,125 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,125 - DEBUG -       prev tok 'odor' (pos=PROPN)
+2025-12-12 22:12:32,125 - DEBUG - >>> remove_spurious_commas output: 'odor.'
+2025-12-12 22:12:32,126 - DEBUG - >>> remove_spurious_commas input: 'A cold dip restores health and zest.'
+2025-12-12 22:12:32,126 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,126 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,126 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,126 - DEBUG - >>> remove_spurious_commas output: 'A cold dip restores health and zest.'
+2025-12-12 22:12:32,127 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,127 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,128 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,128 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,129 - DEBUG - >>> remove_spurious_commas input: 'cold'
+2025-12-12 22:12:32,129 - DEBUG - >>> tokens+POS: [('cold', 'ADJ')]
+2025-12-12 22:12:32,129 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:32,129 - DEBUG - >>> remove_spurious_commas output: 'cold'
+2025-12-12 22:12:32,130 - DEBUG - >>> remove_spurious_commas input: 'dip'
+2025-12-12 22:12:32,130 - DEBUG - >>> tokens+POS: [('dip', 'PROPN')]
+2025-12-12 22:12:32,130 - DEBUG -     checking tok 'dip' (pos=PROPN)
+2025-12-12 22:12:32,130 - DEBUG - >>> remove_spurious_commas output: 'dip'
+2025-12-12 22:12:32,131 - DEBUG - >>> remove_spurious_commas input: 'restores'
+2025-12-12 22:12:32,131 - DEBUG - >>> tokens+POS: [('restores', 'NOUN')]
+2025-12-12 22:12:32,131 - DEBUG -     checking tok 'restores' (pos=NOUN)
+2025-12-12 22:12:32,131 - DEBUG - >>> remove_spurious_commas output: 'restores'
+2025-12-12 22:12:32,132 - DEBUG - >>> remove_spurious_commas input: 'health'
+2025-12-12 22:12:32,132 - DEBUG - >>> tokens+POS: [('health', 'NOUN')]
+2025-12-12 22:12:32,132 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:32,132 - DEBUG - >>> remove_spurious_commas output: 'health'
+2025-12-12 22:12:32,132 - DEBUG - >>> remove_spurious_commas input: 'and'
+2025-12-12 22:12:32,132 - DEBUG - >>> tokens+POS: [('and', 'CCONJ')]
+2025-12-12 22:12:32,133 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:32,133 - DEBUG - >>> remove_spurious_commas output: 'and'
+2025-12-12 22:12:32,134 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:32,134 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:32,134 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:32,134 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:32,134 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:32,134 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:32,135 - DEBUG - >>> remove_spurious_commas input: 'zest.'
+2025-12-12 22:12:32,135 - DEBUG - >>> tokens+POS: [('zest', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,135 - DEBUG -     checking tok 'zest' (pos=ADJ)
+2025-12-12 22:12:32,135 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,135 - DEBUG -       prev tok 'zest' (pos=ADJ)
+2025-12-12 22:12:32,135 - DEBUG - >>> remove_spurious_commas output: 'zest.'
+2025-12-12 22:12:32,136 - DEBUG - >>> remove_spurious_commas input: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:32,137 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,137 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,137 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,137 - DEBUG - >>> remove_spurious_commas output: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:32,138 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,138 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,138 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,138 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,139 - DEBUG - >>> remove_spurious_commas input: 'salt'
+2025-12-12 22:12:32,139 - DEBUG - >>> tokens+POS: [('salt', 'NOUN')]
+2025-12-12 22:12:32,139 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:32,139 - DEBUG - >>> remove_spurious_commas output: 'salt'
+2025-12-12 22:12:32,140 - DEBUG - >>> remove_spurious_commas input: 'pickle'
+2025-12-12 22:12:32,140 - DEBUG - >>> tokens+POS: [('pickle', 'PROPN')]
+2025-12-12 22:12:32,140 - DEBUG -     checking tok 'pickle' (pos=PROPN)
+2025-12-12 22:12:32,140 - DEBUG - >>> remove_spurious_commas output: 'pickle'
+2025-12-12 22:12:32,141 - DEBUG - >>> remove_spurious_commas input: 'tastes'
+2025-12-12 22:12:32,141 - DEBUG - >>> tokens+POS: [('tastes', 'VERB')]
+2025-12-12 22:12:32,141 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:32,141 - DEBUG - >>> remove_spurious_commas output: 'tastes'
+2025-12-12 22:12:32,142 - DEBUG - >>> remove_spurious_commas input: 'fine'
+2025-12-12 22:12:32,142 - DEBUG - >>> tokens+POS: [('fine', 'ADJ')]
+2025-12-12 22:12:32,142 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:32,142 - DEBUG - >>> remove_spurious_commas output: 'fine'
+2025-12-12 22:12:32,143 - DEBUG - >>> remove_spurious_commas input: 'with'
+2025-12-12 22:12:32,143 - DEBUG - >>> tokens+POS: [('with', 'ADP')]
+2025-12-12 22:12:32,143 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:32,143 - DEBUG - >>> remove_spurious_commas output: 'with'
+2025-12-12 22:12:32,144 - DEBUG - >>> remove_spurious_commas input: 'ham.'
+2025-12-12 22:12:32,144 - DEBUG - >>> tokens+POS: [('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,144 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,144 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,144 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,144 - DEBUG - >>> remove_spurious_commas output: 'ham.'
+2025-12-12 22:12:32,145 - DEBUG - >>> remove_spurious_commas input: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:32,145 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,145 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:32,145 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:32,145 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:32,145 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:32,145 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:32,146 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,146 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,146 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,146 - DEBUG - >>> remove_spurious_commas output: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:32,146 - DEBUG - >>> remove_spurious_commas input: 'Tacos'
+2025-12-12 22:12:32,146 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN')]
+2025-12-12 22:12:32,147 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:32,147 - DEBUG - >>> remove_spurious_commas output: 'Tacos'
+2025-12-12 22:12:32,147 - DEBUG - >>> remove_spurious_commas input: 'al'
+2025-12-12 22:12:32,147 - DEBUG - >>> tokens+POS: [('al', 'PROPN')]
+2025-12-12 22:12:32,148 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:32,148 - DEBUG - >>> remove_spurious_commas output: 'al'
+2025-12-12 22:12:32,148 - DEBUG - >>> remove_spurious_commas input: 'pastor'
+2025-12-12 22:12:32,148 - DEBUG - >>> tokens+POS: [('pastor', 'NOUN')]
+2025-12-12 22:12:32,148 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:32,149 - DEBUG - >>> remove_spurious_commas output: 'pastor'
+2025-12-12 22:12:32,149 - DEBUG - >>> remove_spurious_commas input: 'are'
+2025-12-12 22:12:32,149 - DEBUG - >>> tokens+POS: [('are', 'AUX')]
+2025-12-12 22:12:32,149 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:32,149 - DEBUG - >>> remove_spurious_commas output: 'are'
+2025-12-12 22:12:32,150 - DEBUG - >>> remove_spurious_commas input: 'my'
+2025-12-12 22:12:32,151 - DEBUG - >>> tokens+POS: [('my', 'PRON')]
+2025-12-12 22:12:32,151 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:32,151 - DEBUG - >>> remove_spurious_commas output: 'my'
+2025-12-12 22:12:32,152 - DEBUG - >>> remove_spurious_commas input: 'favorite.'
+2025-12-12 22:12:32,152 - DEBUG - >>> tokens+POS: [('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,152 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,152 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,152 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,152 - DEBUG - >>> remove_spurious_commas output: 'favorite.'
+2025-12-12 22:12:32,153 - DEBUG - >>> remove_spurious_commas input: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,153 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,153 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,153 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,153 - DEBUG - >>> remove_spurious_commas output: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,154 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:32,154 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:32,154 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:32,154 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:32,155 - DEBUG - >>> remove_spurious_commas input: 'zestful'
+2025-12-12 22:12:32,155 - DEBUG - >>> tokens+POS: [('zestful', 'ADJ')]
+2025-12-12 22:12:32,155 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:32,155 - DEBUG - >>> remove_spurious_commas output: 'zestful'
+2025-12-12 22:12:32,156 - DEBUG - >>> remove_spurious_commas input: 'food'
+2025-12-12 22:12:32,156 - DEBUG - >>> tokens+POS: [('food', 'NOUN')]
+2025-12-12 22:12:32,156 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:32,156 - DEBUG - >>> remove_spurious_commas output: 'food'
+2025-12-12 22:12:32,157 - DEBUG - >>> remove_spurious_commas input: 'is'
+2025-12-12 22:12:32,157 - DEBUG - >>> tokens+POS: [('is', 'AUX')]
+2025-12-12 22:12:32,157 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:32,157 - DEBUG - >>> remove_spurious_commas output: 'is'
+2025-12-12 22:12:32,158 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:32,158 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:32,158 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:32,158 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:32,159 - DEBUG - >>> remove_spurious_commas input: 'hot'
+2025-12-12 22:12:32,159 - DEBUG - >>> tokens+POS: [('hot', 'ADJ')]
+2025-12-12 22:12:32,159 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:32,159 - DEBUG - >>> remove_spurious_commas output: 'hot'
+2025-12-12 22:12:32,160 - DEBUG - >>> remove_spurious_commas input: 'cross'
+2025-12-12 22:12:32,160 - DEBUG - >>> tokens+POS: [('cross', 'VERB')]
+2025-12-12 22:12:32,160 - DEBUG -     checking tok 'cross' (pos=VERB)
+2025-12-12 22:12:32,160 - DEBUG - >>> remove_spurious_commas output: 'cross'
+2025-12-12 22:12:32,161 - DEBUG - >>> remove_spurious_commas input: 'bun.'
+2025-12-12 22:12:32,161 - DEBUG - >>> tokens+POS: [('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,161 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,161 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,161 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,161 - DEBUG - >>> remove_spurious_commas output: 'bun.'
+2025-12-12 22:12:32,161 - DEBUG - Save in JSON: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.json
+2025-12-12 22:12:32,162 - INFO - Results saved: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.json
+2025-12-12 22:12:32,162 - DEBUG - Size of JSON file: 9038 octets
+2025-12-12 22:12:32,166 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,166 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT'), ('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT'), ('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT'), ('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT'), ('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT'), ('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:32,166 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:32,167 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:32,167 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.'
+2025-12-12 22:12:32,167 - DEBUG - Writing the text file: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.txt (216 caractères)
+2025-12-12 22:12:32,168 - INFO - Cleaned transcription saved: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.txt
+2025-12-12 22:12:32,168 - DEBUG - Conversion of JSON into TextGrid
+2025-12-12 22:12:32,168 - DEBUG - Conversion JSON -> TextGrid: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files_transcription/segment.json
+2025-12-12 22:12:32,168 - DEBUG - JSON chargé avec succès: 6 segments
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 1.32s -> 3.70s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 0.000 -> 1.320
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'The' (1.320 -> 1.600)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'stale' (1.600 -> 2.000)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'smell' (2.000 -> 2.340)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'of' (2.340 -> 2.620)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'old' (2.620 -> 2.840)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'beer' (2.840 -> 3.100)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'lingers.' (3.100 -> 3.700)
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 4.40s -> 6.30s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 3.700 -> 4.400
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'It' (4.400 -> 4.580)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'takes' (4.580 -> 4.900)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'heat' (4.900 -> 5.200)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'to' (5.200 -> 5.440)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'bring' (5.440 -> 5.620)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'out' (5.620 -> 5.860)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'the' (5.860 -> 6.020)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'odor.' (6.020 -> 6.300)
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 7.06s -> 9.44s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 6.300 -> 7.060
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'A' (7.060 -> 7.300)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'cold' (7.300 -> 7.600)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'dip' (7.600 -> 7.920)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'restores' (7.920 -> 8.500)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'health' (8.500 -> 8.840)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'and' (8.840 -> 9.060)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: '[*]' (9.060 -> 9.280)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'zest.' (9.280 -> 9.440)
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 10.02s -> 12.12s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 9.440 -> 10.020
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'A' (10.020 -> 10.260)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'salt' (10.260 -> 10.580)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'pickle' (10.580 -> 10.980)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'tastes' (10.980 -> 11.340)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'fine' (11.340 -> 11.620)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'with' (11.620 -> 11.840)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'ham.' (11.840 -> 12.120)
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 12.68s -> 14.46s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 12.120 -> 12.680
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'Tacos' (12.680 -> 13.080)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'al' (13.080 -> 13.280)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'pastor' (13.280 -> 13.620)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'are' (13.620 -> 13.840)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'my' (13.840 -> 14.060)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'favorite.' (14.060 -> 14.460)
+2025-12-12 22:12:32,168 - DEBUG - Traitement segment: 15.20s -> 17.56s
+2025-12-12 22:12:32,168 - DEBUG - Ajout silence: 14.460 -> 15.200
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'A' (15.200 -> 15.380)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'zestful' (15.380 -> 15.800)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'food' (15.800 -> 16.140)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'is' (16.140 -> 16.480)
+2025-12-12 22:12:32,168 - DEBUG - Ajout mot: 'the' (16.480 -> 16.700)
+2025-12-12 22:12:32,169 - DEBUG - Ajout mot: 'hot' (16.700 -> 16.940)
+2025-12-12 22:12:32,169 - DEBUG - Ajout mot: 'cross' (16.940 -> 17.240)
+2025-12-12 22:12:32,169 - DEBUG - Ajout mot: 'bun.' (17.240 -> 17.560)
+2025-12-12 22:12:32,169 - DEBUG - TextGrid créé: 44 mots, 0 intervalles corrigés, durée totale: 17.560s
+2025-12-12 22:12:32,169 - DEBUG - Writing the TextGrid file: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files/segment.TextGrid
+2025-12-12 22:12:32,169 - INFO - TextGrid created: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest/WhisperTS_textgrid_files/segment.TextGrid
+2025-12-12 22:12:32,169 - INFO - Progression: 1/1 Files processed successfully
+2025-12-12 22:12:32,169 - INFO - Processing completed: 1/1 
+2025-12-12 22:12:32,268 - INFO - >>> Raw Synthetic Synthesis (archive)
+2025-12-12 22:12:35,623 - INFO - >>> Measure Prosody & Build SSML
+2025-12-12 22:12:35,991 - INFO - >>> Synthesize SSML & Merge (exact SSML breaks)
+2025-12-12 22:12:35,996 - INFO - 🚀 Démarrage du traitement par lots...
+2025-12-12 22:12:35,996 - INFO -   - Dossier SSML: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/xml_files
+2025-12-12 22:12:35,996 - INFO -   - Région Azure: francecentral
+2025-12-12 22:12:35,996 - INFO -   - Dossier de sortie: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio
+2025-12-12 22:12:35,996 - INFO - 
+🔍 6 fichiers SSML trouvés dans /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/xml_files
+2025-12-12 22:12:35,996 - INFO - Les fichiers audio seront placés dans: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio
+2025-12-12 22:12:35,996 - INFO - 
+[1/6] Traitement de 0005...
+2025-12-12 22:12:35,996 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:35,997 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0005.wav...
+2025-12-12 22:12:36,956 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0005.wav
+2025-12-12 22:12:37,022 - INFO - 
+[2/6] Traitement de 0004...
+2025-12-12 22:12:37,024 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:37,025 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0004.wav...
+2025-12-12 22:12:37,793 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0004.wav
+2025-12-12 22:12:37,847 - INFO - 
+[3/6] Traitement de 0000...
+2025-12-12 22:12:37,849 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:37,850 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0000.wav...
+2025-12-12 22:12:38,821 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0000.wav
+2025-12-12 22:12:38,873 - INFO - 
+[4/6] Traitement de 0001...
+2025-12-12 22:12:38,874 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:38,876 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0001.wav...
+2025-12-12 22:12:39,639 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0001.wav
+2025-12-12 22:12:39,705 - INFO - 
+[5/6] Traitement de 0003...
+2025-12-12 22:12:39,705 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:39,706 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0003.wav...
+2025-12-12 22:12:40,606 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0003.wav
+2025-12-12 22:12:40,660 - INFO - 
+[6/6] Traitement de 0002...
+2025-12-12 22:12:40,662 - INFO - SSML préparé pour Azure:
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" version="1.0" xml:lang="en-US"><voice name="en-US-AndrewNeural"><mstts:silence type="Leading-exact" value=...
+2025-12-12 22:12:40,663 - INFO - Synthétisation avec la voix en-US-AndrewNeural (Microsoft) vers /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0002.wav...
+2025-12-12 22:12:41,485 - INFO - Synthèse audio terminée. Fichier sauvegardé à: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Data/voice/EnglishTest_ssml/audio/0002.wav
+2025-12-12 22:12:41,547 - INFO - 
+✅ Traitement terminé: 6/6 fichiers traités avec succès
+2025-12-12 22:12:41,547 - INFO - ✨ Tous les fichiers ont été traités avec succès!
+2025-12-12 22:12:41,569 - INFO - ✅ Final merged with exact SSML breaks → /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/OUT.wav
+2025-12-12 22:12:41,573 - INFO - >>> Export Training JSON
+2025-12-12 22:12:41,574 - INFO - Reading CSV from: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/BDD_syntagme_ssml.csv
+2025-12-12 22:12:41,576 - INFO - Collected 6 segments, 13 SSML entries
+2025-12-12 22:12:41,576 - INFO - ✅ Training data written to /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/training_data_EnglishTest.json
+2025-12-12 22:12:41,577 - INFO - Combined folder EnglishTest: 13 entries
+2025-12-12 22:12:41,577 - INFO - ✅ All combined at /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/bdd.json
+2025-12-12 22:12:41,577 - INFO - >>> Final Transcribe: WhisperTS on OUT.wav
+2025-12-12 22:12:41,577 - DEBUG - Démarrage du script avec audio_path=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest, out_path=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files
+2025-12-12 22:12:41,577 - DEBUG - Vérification des dépendances...
+2025-12-12 22:12:41,577 - DEBUG - PyTorch version: 2.8.0
+2025-12-12 22:12:41,577 - DEBUG - whisper_timestamped version: 1.15.9
+2025-12-12 22:12:41,577 - DEBUG - textgrid version: version inconnue
+2025-12-12 22:12:41,578 - DEBUG - Python version: 3.13.11 | packaged by conda-forge | (main, Dec  6 2025, 11:28:54) [Clang 19.1.7 ]
+2025-12-12 22:12:41,578 - DEBUG - Python executable: /Users/ricardo/opt/miniconda3/envs/phd/bin/python
+2025-12-12 22:12:41,578 - DEBUG - Contenu du dossier audio: ['BDD_ssml.csv', 'OUT.wav', 'pause_comparison_full.csv', 'OUT.txt', 'final_whisper', 'BDD_syntagme_ssml.csv', 'OUT.TextGrid', 'BDD_syntagme_for_synth.csv', 'training_data_EnglishTest.json', 'used_config.yaml', 'segmented_audio']
+2025-12-12 22:12:41,578 - INFO - Initialisation with model=medium, device=cpu
+2025-12-12 22:12:41,578 - DEBUG - Infos système - CUDA available: False
+2025-12-12 22:12:41,578 - DEBUG - Fichiers trouvés dans le dossier: 11
+2025-12-12 22:12:41,578 - DEBUG - Fichier WAV détecté: OUT.wav
+2025-12-12 22:12:41,578 - INFO - Nombre de fichiers .wav trouvés: 1
+2025-12-12 22:12:41,578 - DEBUG - Création des dossiers de sortie
+2025-12-12 22:12:41,578 - DEBUG - Dossier de transcription créé: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription
+2025-12-12 22:12:41,578 - DEBUG - Dossier TextGrid créé: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files
+2025-12-12 22:12:41,578 - INFO - Traitement du fichier 1/1: OUT
+2025-12-12 22:12:41,578 - DEBUG - Chemins de sortie: JSON=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.json, TXT=/Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.txt
+2025-12-12 22:12:41,580 - DEBUG - Fichier OUT: RMS=2425.22216796875, silence_ratio=0.63
+2025-12-12 22:12:41,580 - INFO - Processing File: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/OUT.wav
+2025-12-12 22:12:41,580 - DEBUG - Size file: 622486 octets
+2025-12-12 22:12:41,580 - DEBUG - Audio check: RMS=2425.22216796875, silence_ratio=0.63
+2025-12-12 22:12:41,581 - DEBUG - Starting audio loading
+2025-12-12 22:12:41,701 - DEBUG - Audio loaded successfully: 311221 échantillons
+2025-12-12 22:12:41,701 - DEBUG - Audio min/max values: -0.56/0.62
+2025-12-12 22:12:41,701 - INFO - Loading the model  medium
+2025-12-12 22:12:41,701 - DEBUG - Available memory before loading: CUDA non available
+2025-12-12 22:12:46,836 - INFO - Model successfully loaded
+2025-12-12 22:12:46,837 - DEBUG - Available memory after loading: CUDA non available
+2025-12-12 22:12:46,837 - DEBUG - Configuration transcription: {'language': 'en', 'vad': 'auditok', 'compute_word_confidence': True, 'detect_disfluencies': True, 'trust_whisper_timestamps': True}
+2025-12-12 22:12:46,837 - INFO - Début de la transcription
+2025-12-12 22:12:46,837 - DEBUG - Mémoire avant transcription: CUDA non available
+2025-12-12 22:12:50,699 - DEBUG - Add segment 1 at step 14:
+	<|transcribe|><|0.00|> The stale smell of old beer lingers.<|3.82|>
+2025-12-12 22:12:51,914 - DEBUG - Add segment 2 at step 25:
+	<|3.82|><|3.82|> It takes heat to bring out the odor.<|6.36|>
+2025-12-12 22:12:53,098 - DEBUG - Add segment 3 at step 36:
+	<|6.36|><|6.36|> A cold dip restores health and zest.<|9.42|>
+2025-12-12 22:12:54,179 - DEBUG - Add segment 4 at step 46:
+	<|9.42|><|9.42|> A salt pickle tastes fine with ham.<|12.52|>
+2025-12-12 22:12:55,256 - DEBUG - Add segment 5 at step 56:
+	<|12.52|><|12.52|> Tacos al pastor are my favorite.<|14.90|>
+2025-12-12 22:12:56,559 - DEBUG - Add segment 6 at step 67:
+	<|14.90|><|14.90|> A zestful food is the hot cross bun.<|17.30|>
+2025-12-12 22:12:56,575 - DEBUG - Compile results
+2025-12-12 22:12:56,576 - INFO - Transcription ended
+2025-12-12 22:12:56,576 - DEBUG - Memomry after transcription: CUDA non available
+2025-12-12 22:12:56,576 - DEBUG - Number of segments: 6
+2025-12-12 22:12:56,576 - DEBUG - Total number of: 45
+2025-12-12 22:12:56,576 - DEBUG - First segment:  The stale smell of old beer lingers....
+2025-12-12 22:12:56,576 - DEBUG - Last segment:  A zestful food is the hot cross bun....
+2025-12-12 22:12:56,577 - DEBUG - Conversion JSON -> TextGrid: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_raw_json/OUT.raw.json
+2025-12-12 22:12:56,577 - DEBUG - JSON chargé avec succès: 6 segments
+2025-12-12 22:12:56,577 - DEBUG - Traitement segment: 1.35s -> 3.73s
+2025-12-12 22:12:56,577 - DEBUG - Ajout silence: 0.000 -> 1.350
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'The' (1.350 -> 1.590)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'stale' (1.590 -> 1.870)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'smell' (1.870 -> 2.210)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'of' (2.210 -> 2.510)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'old' (2.510 -> 2.810)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'beer' (2.810 -> 3.070)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'lingers.' (3.070 -> 3.730)
+2025-12-12 22:12:56,578 - DEBUG - Traitement segment: 4.63s -> 6.33s
+2025-12-12 22:12:56,578 - DEBUG - Ajout silence: 3.730 -> 4.630
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'It' (4.630 -> 4.830)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'takes' (4.830 -> 5.090)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'heat' (5.090 -> 5.330)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'to' (5.330 -> 5.550)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'bring' (5.550 -> 5.710)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'out' (5.710 -> 5.890)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'the' (5.890 -> 6.070)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'odor.' (6.070 -> 6.330)
+2025-12-12 22:12:56,578 - DEBUG - Traitement segment: 7.44s -> 9.56s
+2025-12-12 22:12:56,578 - DEBUG - Ajout silence: 6.330 -> 7.440
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'A' (7.440 -> 7.700)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'cold' (7.700 -> 7.920)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'dip' (7.920 -> 8.140)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'restores' (8.140 -> 8.540)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: '[*]' (8.540 -> 8.720)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'health' (8.720 -> 8.840)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'and' (8.840 -> 9.140)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: '[*]' (9.140 -> 9.420)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'zest.' (9.420 -> 9.560)
+2025-12-12 22:12:56,578 - DEBUG - Traitement segment: 10.54s -> 12.44s
+2025-12-12 22:12:56,578 - DEBUG - Ajout silence: 9.560 -> 10.540
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'A' (10.540 -> 10.740)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'salt' (10.740 -> 10.980)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'pickle' (10.980 -> 11.240)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'tastes' (11.240 -> 11.600)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'fine' (11.600 -> 11.900)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'with' (11.900 -> 12.140)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'ham.' (12.140 -> 12.440)
+2025-12-12 22:12:56,578 - DEBUG - Traitement segment: 13.36s -> 15.06s
+2025-12-12 22:12:56,578 - DEBUG - Ajout silence: 12.440 -> 13.360
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'Tacos' (13.360 -> 13.780)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'al' (13.780 -> 13.980)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'pastor' (13.980 -> 14.300)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'are' (14.300 -> 14.500)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'my' (14.500 -> 14.720)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'favorite.' (14.720 -> 15.060)
+2025-12-12 22:12:56,578 - DEBUG - Traitement segment: 16.22s -> 18.56s
+2025-12-12 22:12:56,578 - DEBUG - Ajout silence: 15.060 -> 16.220
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'A' (16.220 -> 16.420)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'zestful' (16.420 -> 16.900)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'food' (16.900 -> 17.240)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'is' (17.240 -> 17.520)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'the' (17.520 -> 17.780)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'hot' (17.780 -> 18.000)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'cross' (18.000 -> 18.320)
+2025-12-12 22:12:56,578 - DEBUG - Ajout mot: 'bun.' (18.320 -> 18.560)
+2025-12-12 22:12:56,578 - DEBUG - TextGrid créé: 45 mots, 0 intervalles corrigés, durée totale: 18.560s
+2025-12-12 22:12:56,581 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:56,582 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,582 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,582 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,582 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:56,582 - DEBUG - Texte nettoyé: ' The stale smell of old beer lingers.' -> 'The stale smell of old beer lingers.'
+2025-12-12 22:12:56,583 - DEBUG - >>> remove_spurious_commas input: 'The'
+2025-12-12 22:12:56,583 - DEBUG - >>> tokens+POS: [('The', 'PRON')]
+2025-12-12 22:12:56,583 - DEBUG -     checking tok 'The' (pos=PRON)
+2025-12-12 22:12:56,583 - DEBUG - >>> remove_spurious_commas output: 'The'
+2025-12-12 22:12:56,584 - DEBUG - >>> remove_spurious_commas input: 'stale'
+2025-12-12 22:12:56,584 - DEBUG - >>> tokens+POS: [('stale', 'ADJ')]
+2025-12-12 22:12:56,584 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:56,584 - DEBUG - >>> remove_spurious_commas output: 'stale'
+2025-12-12 22:12:56,585 - DEBUG - >>> remove_spurious_commas input: 'smell'
+2025-12-12 22:12:56,585 - DEBUG - >>> tokens+POS: [('smell', 'NOUN')]
+2025-12-12 22:12:56,585 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:56,585 - DEBUG - >>> remove_spurious_commas output: 'smell'
+2025-12-12 22:12:56,586 - DEBUG - >>> remove_spurious_commas input: 'of'
+2025-12-12 22:12:56,586 - DEBUG - >>> tokens+POS: [('of', 'ADP')]
+2025-12-12 22:12:56,586 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:56,586 - DEBUG - >>> remove_spurious_commas output: 'of'
+2025-12-12 22:12:56,587 - DEBUG - >>> remove_spurious_commas input: 'old'
+2025-12-12 22:12:56,587 - DEBUG - >>> tokens+POS: [('old', 'ADJ')]
+2025-12-12 22:12:56,587 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:56,587 - DEBUG - >>> remove_spurious_commas output: 'old'
+2025-12-12 22:12:56,588 - DEBUG - >>> remove_spurious_commas input: 'beer'
+2025-12-12 22:12:56,588 - DEBUG - >>> tokens+POS: [('beer', 'NOUN')]
+2025-12-12 22:12:56,588 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:56,588 - DEBUG - >>> remove_spurious_commas output: 'beer'
+2025-12-12 22:12:56,589 - DEBUG - >>> remove_spurious_commas input: 'lingers.'
+2025-12-12 22:12:56,589 - DEBUG - >>> tokens+POS: [('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,589 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,589 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,589 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,589 - DEBUG - >>> remove_spurious_commas output: 'lingers.'
+2025-12-12 22:12:56,592 - DEBUG - >>> remove_spurious_commas input: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:56,592 - DEBUG - >>> tokens+POS: [('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,592 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,592 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,592 - DEBUG - >>> remove_spurious_commas output: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:56,592 - DEBUG - Texte nettoyé: ' It takes heat to bring out the odor.' -> 'It takes heat to bring out the odor.'
+2025-12-12 22:12:56,594 - DEBUG - >>> remove_spurious_commas input: 'It'
+2025-12-12 22:12:56,594 - DEBUG - >>> tokens+POS: [('It', 'PRON')]
+2025-12-12 22:12:56,594 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:56,594 - DEBUG - >>> remove_spurious_commas output: 'It'
+2025-12-12 22:12:56,594 - DEBUG - >>> remove_spurious_commas input: 'takes'
+2025-12-12 22:12:56,595 - DEBUG - >>> tokens+POS: [('takes', 'VERB')]
+2025-12-12 22:12:56,595 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:56,595 - DEBUG - >>> remove_spurious_commas output: 'takes'
+2025-12-12 22:12:56,595 - DEBUG - >>> remove_spurious_commas input: 'heat'
+2025-12-12 22:12:56,596 - DEBUG - >>> tokens+POS: [('heat', 'NOUN')]
+2025-12-12 22:12:56,596 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:56,596 - DEBUG - >>> remove_spurious_commas output: 'heat'
+2025-12-12 22:12:56,596 - DEBUG - >>> remove_spurious_commas input: 'to'
+2025-12-12 22:12:56,596 - DEBUG - >>> tokens+POS: [('to', 'PART')]
+2025-12-12 22:12:56,597 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:56,597 - DEBUG - >>> remove_spurious_commas output: 'to'
+2025-12-12 22:12:56,597 - DEBUG - >>> remove_spurious_commas input: 'bring'
+2025-12-12 22:12:56,597 - DEBUG - >>> tokens+POS: [('bring', 'VERB')]
+2025-12-12 22:12:56,597 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:56,597 - DEBUG - >>> remove_spurious_commas output: 'bring'
+2025-12-12 22:12:56,598 - DEBUG - >>> remove_spurious_commas input: 'out'
+2025-12-12 22:12:56,598 - DEBUG - >>> tokens+POS: [('out', 'ADV')]
+2025-12-12 22:12:56,598 - DEBUG -     checking tok 'out' (pos=ADV)
+2025-12-12 22:12:56,598 - DEBUG - >>> remove_spurious_commas output: 'out'
+2025-12-12 22:12:56,599 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:56,599 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:56,599 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:56,599 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:56,601 - DEBUG - >>> remove_spurious_commas input: 'odor.'
+2025-12-12 22:12:56,601 - DEBUG - >>> tokens+POS: [('odor', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,601 - DEBUG -     checking tok 'odor' (pos=PROPN)
+2025-12-12 22:12:56,601 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,601 - DEBUG -       prev tok 'odor' (pos=PROPN)
+2025-12-12 22:12:56,601 - DEBUG - >>> remove_spurious_commas output: 'odor.'
+2025-12-12 22:12:56,602 - DEBUG - >>> remove_spurious_commas input: 'A cold dip restores health and zest.'
+2025-12-12 22:12:56,602 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,602 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,602 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,602 - DEBUG - >>> remove_spurious_commas output: 'A cold dip restores health and zest.'
+2025-12-12 22:12:56,602 - DEBUG - Texte nettoyé: ' A cold dip restores health and zest.' -> 'A cold dip restores health and zest.'
+2025-12-12 22:12:56,603 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,603 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,603 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,603 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,604 - DEBUG - >>> remove_spurious_commas input: 'cold'
+2025-12-12 22:12:56,604 - DEBUG - >>> tokens+POS: [('cold', 'ADJ')]
+2025-12-12 22:12:56,604 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:56,604 - DEBUG - >>> remove_spurious_commas output: 'cold'
+2025-12-12 22:12:56,605 - DEBUG - >>> remove_spurious_commas input: 'dip'
+2025-12-12 22:12:56,605 - DEBUG - >>> tokens+POS: [('dip', 'PROPN')]
+2025-12-12 22:12:56,605 - DEBUG -     checking tok 'dip' (pos=PROPN)
+2025-12-12 22:12:56,605 - DEBUG - >>> remove_spurious_commas output: 'dip'
+2025-12-12 22:12:56,606 - DEBUG - >>> remove_spurious_commas input: 'restores'
+2025-12-12 22:12:56,606 - DEBUG - >>> tokens+POS: [('restores', 'NOUN')]
+2025-12-12 22:12:56,606 - DEBUG -     checking tok 'restores' (pos=NOUN)
+2025-12-12 22:12:56,606 - DEBUG - >>> remove_spurious_commas output: 'restores'
+2025-12-12 22:12:56,607 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:56,607 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:56,607 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:56,607 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:56,607 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:56,607 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:56,608 - DEBUG - >>> remove_spurious_commas input: 'health'
+2025-12-12 22:12:56,608 - DEBUG - >>> tokens+POS: [('health', 'NOUN')]
+2025-12-12 22:12:56,608 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:56,608 - DEBUG - >>> remove_spurious_commas output: 'health'
+2025-12-12 22:12:56,609 - DEBUG - >>> remove_spurious_commas input: 'and'
+2025-12-12 22:12:56,609 - DEBUG - >>> tokens+POS: [('and', 'CCONJ')]
+2025-12-12 22:12:56,609 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:56,609 - DEBUG - >>> remove_spurious_commas output: 'and'
+2025-12-12 22:12:56,610 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:56,610 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:56,610 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:56,610 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:56,610 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:56,610 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:56,611 - DEBUG - >>> remove_spurious_commas input: 'zest.'
+2025-12-12 22:12:56,611 - DEBUG - >>> tokens+POS: [('zest', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,611 - DEBUG -     checking tok 'zest' (pos=ADJ)
+2025-12-12 22:12:56,611 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,611 - DEBUG -       prev tok 'zest' (pos=ADJ)
+2025-12-12 22:12:56,611 - DEBUG - >>> remove_spurious_commas output: 'zest.'
+2025-12-12 22:12:56,613 - DEBUG - >>> remove_spurious_commas input: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:56,613 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,613 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,613 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,613 - DEBUG - >>> remove_spurious_commas output: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:56,613 - DEBUG - Texte nettoyé: ' A salt pickle tastes fine with ham.' -> 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:56,614 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,614 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,614 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,614 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,615 - DEBUG - >>> remove_spurious_commas input: 'salt'
+2025-12-12 22:12:56,615 - DEBUG - >>> tokens+POS: [('salt', 'NOUN')]
+2025-12-12 22:12:56,615 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:56,615 - DEBUG - >>> remove_spurious_commas output: 'salt'
+2025-12-12 22:12:56,616 - DEBUG - >>> remove_spurious_commas input: 'pickle'
+2025-12-12 22:12:56,616 - DEBUG - >>> tokens+POS: [('pickle', 'PROPN')]
+2025-12-12 22:12:56,616 - DEBUG -     checking tok 'pickle' (pos=PROPN)
+2025-12-12 22:12:56,616 - DEBUG - >>> remove_spurious_commas output: 'pickle'
+2025-12-12 22:12:56,617 - DEBUG - >>> remove_spurious_commas input: 'tastes'
+2025-12-12 22:12:56,617 - DEBUG - >>> tokens+POS: [('tastes', 'VERB')]
+2025-12-12 22:12:56,617 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:56,617 - DEBUG - >>> remove_spurious_commas output: 'tastes'
+2025-12-12 22:12:56,618 - DEBUG - >>> remove_spurious_commas input: 'fine'
+2025-12-12 22:12:56,618 - DEBUG - >>> tokens+POS: [('fine', 'ADJ')]
+2025-12-12 22:12:56,618 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:56,618 - DEBUG - >>> remove_spurious_commas output: 'fine'
+2025-12-12 22:12:56,619 - DEBUG - >>> remove_spurious_commas input: 'with'
+2025-12-12 22:12:56,619 - DEBUG - >>> tokens+POS: [('with', 'ADP')]
+2025-12-12 22:12:56,619 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:56,619 - DEBUG - >>> remove_spurious_commas output: 'with'
+2025-12-12 22:12:56,620 - DEBUG - >>> remove_spurious_commas input: 'ham.'
+2025-12-12 22:12:56,620 - DEBUG - >>> tokens+POS: [('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,620 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,620 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,620 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,620 - DEBUG - >>> remove_spurious_commas output: 'ham.'
+2025-12-12 22:12:56,621 - DEBUG - >>> remove_spurious_commas input: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:56,621 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,621 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,621 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,621 - DEBUG - >>> remove_spurious_commas output: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:56,621 - DEBUG - Texte nettoyé: ' Tacos al pastor are my favorite.' -> 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:56,622 - DEBUG - >>> remove_spurious_commas input: 'Tacos'
+2025-12-12 22:12:56,622 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN')]
+2025-12-12 22:12:56,622 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:56,622 - DEBUG - >>> remove_spurious_commas output: 'Tacos'
+2025-12-12 22:12:56,623 - DEBUG - >>> remove_spurious_commas input: 'al'
+2025-12-12 22:12:56,623 - DEBUG - >>> tokens+POS: [('al', 'PROPN')]
+2025-12-12 22:12:56,623 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:56,623 - DEBUG - >>> remove_spurious_commas output: 'al'
+2025-12-12 22:12:56,624 - DEBUG - >>> remove_spurious_commas input: 'pastor'
+2025-12-12 22:12:56,624 - DEBUG - >>> tokens+POS: [('pastor', 'NOUN')]
+2025-12-12 22:12:56,624 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:56,624 - DEBUG - >>> remove_spurious_commas output: 'pastor'
+2025-12-12 22:12:56,625 - DEBUG - >>> remove_spurious_commas input: 'are'
+2025-12-12 22:12:56,625 - DEBUG - >>> tokens+POS: [('are', 'AUX')]
+2025-12-12 22:12:56,625 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:56,625 - DEBUG - >>> remove_spurious_commas output: 'are'
+2025-12-12 22:12:56,626 - DEBUG - >>> remove_spurious_commas input: 'my'
+2025-12-12 22:12:56,626 - DEBUG - >>> tokens+POS: [('my', 'PRON')]
+2025-12-12 22:12:56,626 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:56,626 - DEBUG - >>> remove_spurious_commas output: 'my'
+2025-12-12 22:12:56,627 - DEBUG - >>> remove_spurious_commas input: 'favorite.'
+2025-12-12 22:12:56,627 - DEBUG - >>> tokens+POS: [('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,627 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,627 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,627 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,627 - DEBUG - >>> remove_spurious_commas output: 'favorite.'
+2025-12-12 22:12:56,629 - DEBUG - >>> remove_spurious_commas input: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,629 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,629 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,629 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,629 - DEBUG - >>> remove_spurious_commas output: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,629 - DEBUG - Texte nettoyé: ' A zestful food is the hot cross bun.' -> 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,630 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,630 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,630 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,630 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,631 - DEBUG - >>> remove_spurious_commas input: 'zestful'
+2025-12-12 22:12:56,631 - DEBUG - >>> tokens+POS: [('zestful', 'ADJ')]
+2025-12-12 22:12:56,631 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:56,631 - DEBUG - >>> remove_spurious_commas output: 'zestful'
+2025-12-12 22:12:56,632 - DEBUG - >>> remove_spurious_commas input: 'food'
+2025-12-12 22:12:56,633 - DEBUG - >>> tokens+POS: [('food', 'NOUN')]
+2025-12-12 22:12:56,633 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:56,633 - DEBUG - >>> remove_spurious_commas output: 'food'
+2025-12-12 22:12:56,634 - DEBUG - >>> remove_spurious_commas input: 'is'
+2025-12-12 22:12:56,634 - DEBUG - >>> tokens+POS: [('is', 'AUX')]
+2025-12-12 22:12:56,634 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:56,634 - DEBUG - >>> remove_spurious_commas output: 'is'
+2025-12-12 22:12:56,635 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:56,636 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:56,636 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:56,636 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:56,636 - DEBUG - >>> remove_spurious_commas input: 'hot'
+2025-12-12 22:12:56,636 - DEBUG - >>> tokens+POS: [('hot', 'ADJ')]
+2025-12-12 22:12:56,637 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:56,637 - DEBUG - >>> remove_spurious_commas output: 'hot'
+2025-12-12 22:12:56,637 - DEBUG - >>> remove_spurious_commas input: 'cross'
+2025-12-12 22:12:56,637 - DEBUG - >>> tokens+POS: [('cross', 'VERB')]
+2025-12-12 22:12:56,637 - DEBUG -     checking tok 'cross' (pos=VERB)
+2025-12-12 22:12:56,637 - DEBUG - >>> remove_spurious_commas output: 'cross'
+2025-12-12 22:12:56,638 - DEBUG - >>> remove_spurious_commas input: 'bun.'
+2025-12-12 22:12:56,638 - DEBUG - >>> tokens+POS: [('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,638 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,638 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,638 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,639 - DEBUG - >>> remove_spurious_commas output: 'bun.'
+2025-12-12 22:12:56,639 - DEBUG - clean transcription and save
+2025-12-12 22:12:56,640 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:56,640 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,640 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,640 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,640 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers.'
+2025-12-12 22:12:56,641 - DEBUG - >>> remove_spurious_commas input: 'The'
+2025-12-12 22:12:56,641 - DEBUG - >>> tokens+POS: [('The', 'PRON')]
+2025-12-12 22:12:56,641 - DEBUG -     checking tok 'The' (pos=PRON)
+2025-12-12 22:12:56,641 - DEBUG - >>> remove_spurious_commas output: 'The'
+2025-12-12 22:12:56,642 - DEBUG - >>> remove_spurious_commas input: 'stale'
+2025-12-12 22:12:56,642 - DEBUG - >>> tokens+POS: [('stale', 'ADJ')]
+2025-12-12 22:12:56,642 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:56,642 - DEBUG - >>> remove_spurious_commas output: 'stale'
+2025-12-12 22:12:56,643 - DEBUG - >>> remove_spurious_commas input: 'smell'
+2025-12-12 22:12:56,643 - DEBUG - >>> tokens+POS: [('smell', 'NOUN')]
+2025-12-12 22:12:56,643 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:56,643 - DEBUG - >>> remove_spurious_commas output: 'smell'
+2025-12-12 22:12:56,644 - DEBUG - >>> remove_spurious_commas input: 'of'
+2025-12-12 22:12:56,644 - DEBUG - >>> tokens+POS: [('of', 'ADP')]
+2025-12-12 22:12:56,644 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:56,644 - DEBUG - >>> remove_spurious_commas output: 'of'
+2025-12-12 22:12:56,645 - DEBUG - >>> remove_spurious_commas input: 'old'
+2025-12-12 22:12:56,646 - DEBUG - >>> tokens+POS: [('old', 'ADJ')]
+2025-12-12 22:12:56,646 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:56,646 - DEBUG - >>> remove_spurious_commas output: 'old'
+2025-12-12 22:12:56,647 - DEBUG - >>> remove_spurious_commas input: 'beer'
+2025-12-12 22:12:56,647 - DEBUG - >>> tokens+POS: [('beer', 'NOUN')]
+2025-12-12 22:12:56,647 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:56,647 - DEBUG - >>> remove_spurious_commas output: 'beer'
+2025-12-12 22:12:56,648 - DEBUG - >>> remove_spurious_commas input: 'lingers.'
+2025-12-12 22:12:56,648 - DEBUG - >>> tokens+POS: [('lingers', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,648 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,648 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,648 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,648 - DEBUG - >>> remove_spurious_commas output: 'lingers.'
+2025-12-12 22:12:56,650 - DEBUG - >>> remove_spurious_commas input: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:56,650 - DEBUG - >>> tokens+POS: [('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,650 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,650 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,650 - DEBUG - >>> remove_spurious_commas output: 'It takes heat to bring out the odor.'
+2025-12-12 22:12:56,651 - DEBUG - >>> remove_spurious_commas input: 'It'
+2025-12-12 22:12:56,651 - DEBUG - >>> tokens+POS: [('It', 'PRON')]
+2025-12-12 22:12:56,651 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:56,651 - DEBUG - >>> remove_spurious_commas output: 'It'
+2025-12-12 22:12:56,652 - DEBUG - >>> remove_spurious_commas input: 'takes'
+2025-12-12 22:12:56,652 - DEBUG - >>> tokens+POS: [('takes', 'VERB')]
+2025-12-12 22:12:56,652 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:56,653 - DEBUG - >>> remove_spurious_commas output: 'takes'
+2025-12-12 22:12:56,653 - DEBUG - >>> remove_spurious_commas input: 'heat'
+2025-12-12 22:12:56,653 - DEBUG - >>> tokens+POS: [('heat', 'NOUN')]
+2025-12-12 22:12:56,654 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:56,654 - DEBUG - >>> remove_spurious_commas output: 'heat'
+2025-12-12 22:12:56,654 - DEBUG - >>> remove_spurious_commas input: 'to'
+2025-12-12 22:12:56,654 - DEBUG - >>> tokens+POS: [('to', 'PART')]
+2025-12-12 22:12:56,655 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:56,655 - DEBUG - >>> remove_spurious_commas output: 'to'
+2025-12-12 22:12:56,655 - DEBUG - >>> remove_spurious_commas input: 'bring'
+2025-12-12 22:12:56,655 - DEBUG - >>> tokens+POS: [('bring', 'VERB')]
+2025-12-12 22:12:56,655 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:56,656 - DEBUG - >>> remove_spurious_commas output: 'bring'
+2025-12-12 22:12:56,656 - DEBUG - >>> remove_spurious_commas input: 'out'
+2025-12-12 22:12:56,656 - DEBUG - >>> tokens+POS: [('out', 'ADV')]
+2025-12-12 22:12:56,656 - DEBUG -     checking tok 'out' (pos=ADV)
+2025-12-12 22:12:56,656 - DEBUG - >>> remove_spurious_commas output: 'out'
+2025-12-12 22:12:56,657 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:56,657 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:56,657 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:56,657 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:56,658 - DEBUG - >>> remove_spurious_commas input: 'odor.'
+2025-12-12 22:12:56,659 - DEBUG - >>> tokens+POS: [('odor', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,659 - DEBUG -     checking tok 'odor' (pos=PROPN)
+2025-12-12 22:12:56,659 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,659 - DEBUG -       prev tok 'odor' (pos=PROPN)
+2025-12-12 22:12:56,659 - DEBUG - >>> remove_spurious_commas output: 'odor.'
+2025-12-12 22:12:56,660 - DEBUG - >>> remove_spurious_commas input: 'A cold dip restores health and zest.'
+2025-12-12 22:12:56,660 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,660 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,660 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,660 - DEBUG - >>> remove_spurious_commas output: 'A cold dip restores health and zest.'
+2025-12-12 22:12:56,661 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,661 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,661 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,662 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,662 - DEBUG - >>> remove_spurious_commas input: 'cold'
+2025-12-12 22:12:56,662 - DEBUG - >>> tokens+POS: [('cold', 'ADJ')]
+2025-12-12 22:12:56,662 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:56,663 - DEBUG - >>> remove_spurious_commas output: 'cold'
+2025-12-12 22:12:56,663 - DEBUG - >>> remove_spurious_commas input: 'dip'
+2025-12-12 22:12:56,664 - DEBUG - >>> tokens+POS: [('dip', 'PROPN')]
+2025-12-12 22:12:56,664 - DEBUG -     checking tok 'dip' (pos=PROPN)
+2025-12-12 22:12:56,664 - DEBUG - >>> remove_spurious_commas output: 'dip'
+2025-12-12 22:12:56,664 - DEBUG - >>> remove_spurious_commas input: 'restores'
+2025-12-12 22:12:56,664 - DEBUG - >>> tokens+POS: [('restores', 'NOUN')]
+2025-12-12 22:12:56,665 - DEBUG -     checking tok 'restores' (pos=NOUN)
+2025-12-12 22:12:56,665 - DEBUG - >>> remove_spurious_commas output: 'restores'
+2025-12-12 22:12:56,666 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:56,666 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:56,666 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:56,666 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:56,666 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:56,666 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:56,667 - DEBUG - >>> remove_spurious_commas input: 'health'
+2025-12-12 22:12:56,667 - DEBUG - >>> tokens+POS: [('health', 'NOUN')]
+2025-12-12 22:12:56,667 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:56,667 - DEBUG - >>> remove_spurious_commas output: 'health'
+2025-12-12 22:12:56,667 - DEBUG - >>> remove_spurious_commas input: 'and'
+2025-12-12 22:12:56,668 - DEBUG - >>> tokens+POS: [('and', 'CCONJ')]
+2025-12-12 22:12:56,668 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:56,668 - DEBUG - >>> remove_spurious_commas output: 'and'
+2025-12-12 22:12:56,669 - DEBUG - >>> remove_spurious_commas input: '[*]'
+2025-12-12 22:12:56,669 - DEBUG - >>> tokens+POS: [('[', 'X'), ('*', 'X'), (']', 'X')]
+2025-12-12 22:12:56,669 - DEBUG -     checking tok '[' (pos=X)
+2025-12-12 22:12:56,669 - DEBUG -     checking tok '*' (pos=X)
+2025-12-12 22:12:56,669 - DEBUG -     checking tok ']' (pos=X)
+2025-12-12 22:12:56,669 - DEBUG - >>> remove_spurious_commas output: '[*]'
+2025-12-12 22:12:56,670 - DEBUG - >>> remove_spurious_commas input: 'zest.'
+2025-12-12 22:12:56,670 - DEBUG - >>> tokens+POS: [('zest', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,670 - DEBUG -     checking tok 'zest' (pos=ADJ)
+2025-12-12 22:12:56,670 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,670 - DEBUG -       prev tok 'zest' (pos=ADJ)
+2025-12-12 22:12:56,670 - DEBUG - >>> remove_spurious_commas output: 'zest.'
+2025-12-12 22:12:56,672 - DEBUG - >>> remove_spurious_commas input: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:56,672 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,672 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,672 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,672 - DEBUG - >>> remove_spurious_commas output: 'A salt pickle tastes fine with ham.'
+2025-12-12 22:12:56,673 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,673 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,673 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,673 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,674 - DEBUG - >>> remove_spurious_commas input: 'salt'
+2025-12-12 22:12:56,674 - DEBUG - >>> tokens+POS: [('salt', 'NOUN')]
+2025-12-12 22:12:56,674 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:56,674 - DEBUG - >>> remove_spurious_commas output: 'salt'
+2025-12-12 22:12:56,675 - DEBUG - >>> remove_spurious_commas input: 'pickle'
+2025-12-12 22:12:56,675 - DEBUG - >>> tokens+POS: [('pickle', 'PROPN')]
+2025-12-12 22:12:56,675 - DEBUG -     checking tok 'pickle' (pos=PROPN)
+2025-12-12 22:12:56,675 - DEBUG - >>> remove_spurious_commas output: 'pickle'
+2025-12-12 22:12:56,676 - DEBUG - >>> remove_spurious_commas input: 'tastes'
+2025-12-12 22:12:56,676 - DEBUG - >>> tokens+POS: [('tastes', 'VERB')]
+2025-12-12 22:12:56,676 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:56,676 - DEBUG - >>> remove_spurious_commas output: 'tastes'
+2025-12-12 22:12:56,677 - DEBUG - >>> remove_spurious_commas input: 'fine'
+2025-12-12 22:12:56,677 - DEBUG - >>> tokens+POS: [('fine', 'ADJ')]
+2025-12-12 22:12:56,677 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:56,677 - DEBUG - >>> remove_spurious_commas output: 'fine'
+2025-12-12 22:12:56,678 - DEBUG - >>> remove_spurious_commas input: 'with'
+2025-12-12 22:12:56,678 - DEBUG - >>> tokens+POS: [('with', 'ADP')]
+2025-12-12 22:12:56,678 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:56,678 - DEBUG - >>> remove_spurious_commas output: 'with'
+2025-12-12 22:12:56,679 - DEBUG - >>> remove_spurious_commas input: 'ham.'
+2025-12-12 22:12:56,679 - DEBUG - >>> tokens+POS: [('ham', 'PROPN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,679 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,679 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,679 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,679 - DEBUG - >>> remove_spurious_commas output: 'ham.'
+2025-12-12 22:12:56,680 - DEBUG - >>> remove_spurious_commas input: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:56,680 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,680 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,681 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,681 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,681 - DEBUG - >>> remove_spurious_commas output: 'Tacos al pastor are my favorite.'
+2025-12-12 22:12:56,682 - DEBUG - >>> remove_spurious_commas input: 'Tacos'
+2025-12-12 22:12:56,682 - DEBUG - >>> tokens+POS: [('Tacos', 'PROPN')]
+2025-12-12 22:12:56,682 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:56,682 - DEBUG - >>> remove_spurious_commas output: 'Tacos'
+2025-12-12 22:12:56,683 - DEBUG - >>> remove_spurious_commas input: 'al'
+2025-12-12 22:12:56,683 - DEBUG - >>> tokens+POS: [('al', 'PROPN')]
+2025-12-12 22:12:56,683 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:56,683 - DEBUG - >>> remove_spurious_commas output: 'al'
+2025-12-12 22:12:56,684 - DEBUG - >>> remove_spurious_commas input: 'pastor'
+2025-12-12 22:12:56,684 - DEBUG - >>> tokens+POS: [('pastor', 'NOUN')]
+2025-12-12 22:12:56,684 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:56,684 - DEBUG - >>> remove_spurious_commas output: 'pastor'
+2025-12-12 22:12:56,685 - DEBUG - >>> remove_spurious_commas input: 'are'
+2025-12-12 22:12:56,685 - DEBUG - >>> tokens+POS: [('are', 'AUX')]
+2025-12-12 22:12:56,685 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:56,685 - DEBUG - >>> remove_spurious_commas output: 'are'
+2025-12-12 22:12:56,686 - DEBUG - >>> remove_spurious_commas input: 'my'
+2025-12-12 22:12:56,686 - DEBUG - >>> tokens+POS: [('my', 'PRON')]
+2025-12-12 22:12:56,686 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:56,686 - DEBUG - >>> remove_spurious_commas output: 'my'
+2025-12-12 22:12:56,687 - DEBUG - >>> remove_spurious_commas input: 'favorite.'
+2025-12-12 22:12:56,687 - DEBUG - >>> tokens+POS: [('favorite', 'ADJ'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,687 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,687 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,687 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,687 - DEBUG - >>> remove_spurious_commas output: 'favorite.'
+2025-12-12 22:12:56,688 - DEBUG - >>> remove_spurious_commas input: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,688 - DEBUG - >>> tokens+POS: [('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,688 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,688 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,688 - DEBUG - >>> remove_spurious_commas output: 'A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,690 - DEBUG - >>> remove_spurious_commas input: 'A'
+2025-12-12 22:12:56,690 - DEBUG - >>> tokens+POS: [('A', 'PRON')]
+2025-12-12 22:12:56,690 - DEBUG -     checking tok 'A' (pos=PRON)
+2025-12-12 22:12:56,690 - DEBUG - >>> remove_spurious_commas output: 'A'
+2025-12-12 22:12:56,691 - DEBUG - >>> remove_spurious_commas input: 'zestful'
+2025-12-12 22:12:56,691 - DEBUG - >>> tokens+POS: [('zestful', 'ADJ')]
+2025-12-12 22:12:56,691 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:56,691 - DEBUG - >>> remove_spurious_commas output: 'zestful'
+2025-12-12 22:12:56,692 - DEBUG - >>> remove_spurious_commas input: 'food'
+2025-12-12 22:12:56,692 - DEBUG - >>> tokens+POS: [('food', 'NOUN')]
+2025-12-12 22:12:56,692 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:56,692 - DEBUG - >>> remove_spurious_commas output: 'food'
+2025-12-12 22:12:56,693 - DEBUG - >>> remove_spurious_commas input: 'is'
+2025-12-12 22:12:56,693 - DEBUG - >>> tokens+POS: [('is', 'AUX')]
+2025-12-12 22:12:56,693 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:56,693 - DEBUG - >>> remove_spurious_commas output: 'is'
+2025-12-12 22:12:56,694 - DEBUG - >>> remove_spurious_commas input: 'the'
+2025-12-12 22:12:56,694 - DEBUG - >>> tokens+POS: [('the', 'PRON')]
+2025-12-12 22:12:56,694 - DEBUG -     checking tok 'the' (pos=PRON)
+2025-12-12 22:12:56,694 - DEBUG - >>> remove_spurious_commas output: 'the'
+2025-12-12 22:12:56,695 - DEBUG - >>> remove_spurious_commas input: 'hot'
+2025-12-12 22:12:56,695 - DEBUG - >>> tokens+POS: [('hot', 'ADJ')]
+2025-12-12 22:12:56,695 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:56,695 - DEBUG - >>> remove_spurious_commas output: 'hot'
+2025-12-12 22:12:56,696 - DEBUG - >>> remove_spurious_commas input: 'cross'
+2025-12-12 22:12:56,696 - DEBUG - >>> tokens+POS: [('cross', 'VERB')]
+2025-12-12 22:12:56,696 - DEBUG -     checking tok 'cross' (pos=VERB)
+2025-12-12 22:12:56,696 - DEBUG - >>> remove_spurious_commas output: 'cross'
+2025-12-12 22:12:56,697 - DEBUG - >>> remove_spurious_commas input: 'bun.'
+2025-12-12 22:12:56,697 - DEBUG - >>> tokens+POS: [('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,697 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,697 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,697 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,697 - DEBUG - >>> remove_spurious_commas output: 'bun.'
+2025-12-12 22:12:56,697 - DEBUG - Save in JSON: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.json
+2025-12-12 22:12:56,698 - INFO - Results saved: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.json
+2025-12-12 22:12:56,698 - DEBUG - Size of JSON file: 9330 octets
+2025-12-12 22:12:56,702 - DEBUG - >>> remove_spurious_commas input: 'The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,702 - DEBUG - >>> tokens+POS: [('The', 'DET'), ('stale', 'ADJ'), ('smell', 'NOUN'), ('of', 'ADP'), ('old', 'ADJ'), ('beer', 'NOUN'), ('lingers', 'NOUN'), ('.', 'PUNCT'), ('It', 'PRON'), ('takes', 'VERB'), ('heat', 'NOUN'), ('to', 'PART'), ('bring', 'VERB'), ('out', 'ADP'), ('the', 'DET'), ('odor', 'NOUN'), ('.', 'PUNCT'), ('A', 'DET'), ('cold', 'ADJ'), ('dip', 'NOUN'), ('restores', 'VERB'), ('health', 'NOUN'), ('and', 'CCONJ'), ('zest', 'NOUN'), ('.', 'PUNCT'), ('A', 'DET'), ('salt', 'NOUN'), ('pickle', 'NOUN'), ('tastes', 'VERB'), ('fine', 'ADJ'), ('with', 'ADP'), ('ham', 'PROPN'), ('.', 'PUNCT'), ('Tacos', 'PROPN'), ('al', 'PROPN'), ('pastor', 'NOUN'), ('are', 'AUX'), ('my', 'PRON'), ('favorite', 'ADJ'), ('.', 'PUNCT'), ('A', 'DET'), ('zestful', 'ADJ'), ('food', 'NOUN'), ('is', 'AUX'), ('the', 'DET'), ('hot', 'ADJ'), ('cross', 'NOUN'), ('bun', 'NOUN'), ('.', 'PUNCT')]
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'The' (pos=DET)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'stale' (pos=ADJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'smell' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'of' (pos=ADP)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'old' (pos=ADJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'beer' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,702 - DEBUG -       prev tok 'lingers' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'It' (pos=PRON)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'takes' (pos=VERB)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'heat' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'to' (pos=PART)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'bring' (pos=VERB)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'out' (pos=ADP)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,702 - DEBUG -       prev tok 'odor' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'cold' (pos=ADJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'dip' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'restores' (pos=VERB)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'health' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'and' (pos=CCONJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,702 - DEBUG -       prev tok 'zest' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'salt' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'pickle' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'tastes' (pos=VERB)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'fine' (pos=ADJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'with' (pos=ADP)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,702 - DEBUG -       prev tok 'ham' (pos=PROPN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'Tacos' (pos=PROPN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'al' (pos=PROPN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'pastor' (pos=NOUN)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'are' (pos=AUX)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'my' (pos=PRON)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,702 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,702 - DEBUG -       prev tok 'favorite' (pos=ADJ)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'A' (pos=DET)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'zestful' (pos=ADJ)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'food' (pos=NOUN)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'is' (pos=AUX)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'the' (pos=DET)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'hot' (pos=ADJ)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'cross' (pos=NOUN)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,703 - DEBUG -     checking tok '.' (pos=PUNCT)
+2025-12-12 22:12:56,703 - DEBUG -       prev tok 'bun' (pos=NOUN)
+2025-12-12 22:12:56,703 - DEBUG - >>> remove_spurious_commas output: 'The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.'
+2025-12-12 22:12:56,703 - DEBUG - Writing the text file: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.txt (216 caractères)
+2025-12-12 22:12:56,703 - INFO - Cleaned transcription saved: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.txt
+2025-12-12 22:12:56,703 - DEBUG - Conversion of JSON into TextGrid
+2025-12-12 22:12:56,703 - DEBUG - Conversion JSON -> TextGrid: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files_transcription/OUT.json
+2025-12-12 22:12:56,703 - DEBUG - JSON chargé avec succès: 6 segments
+2025-12-12 22:12:56,703 - DEBUG - Traitement segment: 1.35s -> 3.73s
+2025-12-12 22:12:56,703 - DEBUG - Ajout silence: 0.000 -> 1.350
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'The' (1.350 -> 1.590)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'stale' (1.590 -> 1.870)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'smell' (1.870 -> 2.210)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'of' (2.210 -> 2.510)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'old' (2.510 -> 2.810)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'beer' (2.810 -> 3.070)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'lingers.' (3.070 -> 3.730)
+2025-12-12 22:12:56,703 - DEBUG - Traitement segment: 4.63s -> 6.33s
+2025-12-12 22:12:56,703 - DEBUG - Ajout silence: 3.730 -> 4.630
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'It' (4.630 -> 4.830)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'takes' (4.830 -> 5.090)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'heat' (5.090 -> 5.330)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'to' (5.330 -> 5.550)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'bring' (5.550 -> 5.710)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'out' (5.710 -> 5.890)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'the' (5.890 -> 6.070)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'odor.' (6.070 -> 6.330)
+2025-12-12 22:12:56,703 - DEBUG - Traitement segment: 7.44s -> 9.56s
+2025-12-12 22:12:56,703 - DEBUG - Ajout silence: 6.330 -> 7.440
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'A' (7.440 -> 7.700)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'cold' (7.700 -> 7.920)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'dip' (7.920 -> 8.140)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'restores' (8.140 -> 8.540)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: '[*]' (8.540 -> 8.720)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'health' (8.720 -> 8.840)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: 'and' (8.840 -> 9.140)
+2025-12-12 22:12:56,703 - DEBUG - Ajout mot: '[*]' (9.140 -> 9.420)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'zest.' (9.420 -> 9.560)
+2025-12-12 22:12:56,704 - DEBUG - Traitement segment: 10.54s -> 12.44s
+2025-12-12 22:12:56,704 - DEBUG - Ajout silence: 9.560 -> 10.540
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'A' (10.540 -> 10.740)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'salt' (10.740 -> 10.980)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'pickle' (10.980 -> 11.240)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'tastes' (11.240 -> 11.600)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'fine' (11.600 -> 11.900)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'with' (11.900 -> 12.140)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'ham.' (12.140 -> 12.440)
+2025-12-12 22:12:56,704 - DEBUG - Traitement segment: 13.36s -> 15.06s
+2025-12-12 22:12:56,704 - DEBUG - Ajout silence: 12.440 -> 13.360
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'Tacos' (13.360 -> 13.780)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'al' (13.780 -> 13.980)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'pastor' (13.980 -> 14.300)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'are' (14.300 -> 14.500)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'my' (14.500 -> 14.720)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'favorite.' (14.720 -> 15.060)
+2025-12-12 22:12:56,704 - DEBUG - Traitement segment: 16.22s -> 18.56s
+2025-12-12 22:12:56,704 - DEBUG - Ajout silence: 15.060 -> 16.220
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'A' (16.220 -> 16.420)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'zestful' (16.420 -> 16.900)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'food' (16.900 -> 17.240)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'is' (17.240 -> 17.520)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'the' (17.520 -> 17.780)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'hot' (17.780 -> 18.000)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'cross' (18.000 -> 18.320)
+2025-12-12 22:12:56,704 - DEBUG - Ajout mot: 'bun.' (18.320 -> 18.560)
+2025-12-12 22:12:56,704 - DEBUG - TextGrid créé: 45 mots, 0 intervalles corrigés, durée totale: 18.560s
+2025-12-12 22:12:56,704 - DEBUG - Writing the TextGrid file: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files/OUT.TextGrid
+2025-12-12 22:12:56,704 - INFO - TextGrid created: /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/final_whisper/WhisperTS_textgrid_files/OUT.TextGrid
+2025-12-12 22:12:56,704 - INFO - Progression: 1/1 Files processed successfully
+2025-12-12 22:12:56,704 - INFO - Processing completed: 1/1 
+2025-12-12 22:12:56,786 - INFO - ✅ Final transcription files saved in /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest
+2025-12-12 22:12:56,794 - WARNING - Low match quality for “A cold dip restores health and zest.” → “zest.”: 0.21
+2025-12-12 22:12:56,795 - INFO - Breaks compared: 6
+2025-12-12 22:12:56,795 - INFO - Within ±5 ms: 0/6 (0.0%)
+2025-12-12 22:12:56,795 - INFO - Avg |diff|: 372 ms
+2025-12-12 22:12:56,795 - INFO - Avg match_quality: 0.87
+2025-12-12 22:12:56,797 - INFO - Config saved to /Users/ricardo/Documents/GitHub/Prosody-Control-French-TTS/Out/results/EnglishTest/used_config.yaml
+2025-12-12 22:12:56,797 - INFO - --- Finished pipeline for: EnglishTest ---
+2025-12-12 22:12:56,797 - INFO - All pipelines finished.

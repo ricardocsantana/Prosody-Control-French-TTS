@@ -1,0 +1,7 @@
+segment,syntagme,nat_voice_ms,synth_voice_ms,diff_ms,ok,match_quality
+segment,The stale smell of old beer lingers.,700,900,200,False,1.0
+segment,It takes heat to bring out the odor.,760,1110,350,False,1.0
+segment,A cold dip restores health and zest.,580,980,400,False,0.21
+segment,A salt pickle tastes fine with ham.,560,920,360,False,1.0
+segment,Tacos al pastor are my favorite.,740,1160,420,False,1.0
+segment,A zestful food is the hot cross bun.,500,0,-500,False,1.0

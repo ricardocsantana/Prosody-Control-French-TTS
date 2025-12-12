@@ -1,0 +1,138 @@
+{
+  "EnglishTest": {
+    "x": "The stale smell of old beer lingers. It takes heat to bring out the odor. A cold dip restores health and zest. A salt pickle tastes fine with ham. Tacos al pastor are my favorite. A zestful food is the hot cross bun.",
+    "y": {
+      "parsed_sequence": [
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "1320ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "The stale smell of old beer lingers.",
+          "prosody": {
+            "pitch": "+1.54%",
+            "rate": "-0.55%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "700ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "It takes heat to bring out the odor.",
+          "prosody": {
+            "pitch": "+3.79%",
+            "rate": "-0.71%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "760ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "A cold dip restores health and zest.",
+          "prosody": {
+            "pitch": "+1.40%",
+            "rate": "-0.92%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "580ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "A salt pickle tastes fine with ham.",
+          "prosody": {
+            "pitch": "-0.13%",
+            "rate": "-1.03%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "560ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "Tacos al pastor are my favorite.",
+          "prosody": {
+            "pitch": "+1.48%",
+            "rate": "-2.46%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "740ms"
+        },
+        {
+          "segment": "segment",
+          "type": "text",
+          "text": "A zestful food is the hot cross bun.",
+          "prosody": {
+            "pitch": "+1.17%",
+            "rate": "-3.58%",
+            "volume": "-10.00%"
+          }
+        },
+        {
+          "segment": "segment",
+          "type": "break",
+          "time": "500ms"
+        }
+      ],
+      "stripped_ssml": {
+        "segment": [
+          "<break time=\"1320ms\" />",
+          "<prosody pitch=\"+1.54%\" rate=\"-0.55%\" volume=\"-10.00%\">The stale smell of old beer lingers.</prosody>",
+          "<break time=\"700ms\" />",
+          "<prosody pitch=\"+3.79%\" rate=\"-0.71%\" volume=\"-10.00%\">It takes heat to bring out the odor.</prosody>",
+          "<break time=\"760ms\" />",
+          "<prosody pitch=\"+1.40%\" rate=\"-0.92%\" volume=\"-10.00%\">A cold dip restores health and zest.</prosody>",
+          "<break time=\"580ms\" />",
+          "<prosody pitch=\"-0.13%\" rate=\"-1.03%\" volume=\"-10.00%\">A salt pickle tastes fine with ham.</prosody>",
+          "<break time=\"560ms\" />",
+          "<prosody pitch=\"+1.48%\" rate=\"-2.46%\" volume=\"-10.00%\">Tacos al pastor are my favorite.</prosody>",
+          "<break time=\"740ms\" />",
+          "<prosody pitch=\"+1.17%\" rate=\"-3.58%\" volume=\"-10.00%\">A zestful food is the hot cross bun.</prosody>",
+          "<break time=\"500ms\" />"
+        ]
+      },
+      "raw_ssml": {
+        "segment": [
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+0.00%\" rate=\"+0.00%\" volume=\"-10.00%\"><break time=\"1320ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+1.54%\" rate=\"-0.55%\" volume=\"-10.00%\">The stale smell of old beer lingers.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+2.79%\" rate=\"-0.44%\" volume=\"-10.00%\"><break time=\"700ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+3.79%\" rate=\"-0.71%\" volume=\"-10.00%\">It takes heat to bring out the odor.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+3.03%\" rate=\"-0.57%\" volume=\"-10.00%\"><break time=\"760ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+1.40%\" rate=\"-0.92%\" volume=\"-10.00%\">A cold dip restores health and zest.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+1.12%\" rate=\"-0.74%\" volume=\"-10.00%\"><break time=\"580ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"-0.13%\" rate=\"-1.03%\" volume=\"-10.00%\">A salt pickle tastes fine with ham.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"-0.10%\" rate=\"-0.82%\" volume=\"-10.00%\"><break time=\"560ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+1.48%\" rate=\"-2.46%\" volume=\"-10.00%\">Tacos al pastor are my favorite.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+2.74%\" rate=\"-1.97%\" volume=\"-10.00%\"><break time=\"740ms\"/></prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+1.17%\" rate=\"-3.58%\" volume=\"-10.00%\">A zestful food is the hot cross bun.</prosody></voice></speak>",
+          "<speak xmlns=\"http://www.w3.org/2001/10/synthesis\" version=\"1.0\" xml:lang=\"en-US\"><voice name=\"en-US-AndrewNeural\"><prosody pitch=\"+0.94%\" rate=\"-2.86%\" volume=\"-10.00%\"><break time=\"500ms\"/></prosody></voice></speak>"
+        ]
+      }
+    }
+  }
+}

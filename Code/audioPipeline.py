@@ -1,7 +1,7 @@
 import os
+os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 import sys
 import logging
-import torch
 import yaml
 import numpy as np
 import pandas as pd
@@ -16,14 +16,14 @@ from Preprocessing.gen_break_ssml import extract_words_and_pauses
 import multiprocessing
 import re
 import shutil
-import pandas as pd
 import textgrid
 from difflib import SequenceMatcher
 import spacy
 import json
+import torch
 
 
-_nlp = spacy.load("fr_core_news_sm", disable=["ner"])
+_nlp = spacy.load("en_core_web_sm", disable=["ner"])
 _FORBIDDEN = {"DET", "ADP", "CCONJ", "SCONJ", "PART", "PRON"}
 
 # 1) Load configuration
@@ -110,8 +110,10 @@ class AudioPipeline:
         # Azure & whisper settings
         self.azure_voice = cfg["azure_voice_name"]
         self.whisper_device = cfg.get("whisper_device", "cuda" if torch.cuda.is_available() else "cpu")
+        if self.whisper_device.startswith("cuda") and not torch.cuda.is_available():
+             self.whisper_device = "cpu"
         self.whisper_model = cfg.get("whisper_model", "turbo")
-        self.azure_region = cfg.get("azure_region", "francecentral")
+        self.azure_region = cfg.get("azure_region", "eastus")
 
         # Silence-split
         sil = cfg["silence"]
@@ -255,6 +257,7 @@ class AudioPipeline:
             None,
             None,
             False,
+            region=self.azure_region
         )
 
 
@@ -361,9 +364,19 @@ class AudioPipeline:
             return AudioSegment.from_file(str(wav_path)).duration_seconds or 1e-4
 
         # ── 1) Segment-level prosody stats & sliding-window baselines ─────────
+        def get_sort_key(p):
+            m = re.search(r"segment_ph(\d+)", p.stem)
+            if m:
+                return int(m.group(1))
+            # Fallback: try any number
+            m = re.search(r"(\d+)", p.stem)
+            if m:
+                return int(m.group(1))
+            return 0
+
         seg_files = sorted(
             self.voice_dir.joinpath("audio").glob("*.wav"),
-            key=lambda p: int(re.search(r"segment_ph(\d+)", p.stem).group(1))
+            key=get_sort_key
         )
         if not seg_files:
             logging.error("No audio segments found!")
@@ -634,7 +647,7 @@ class AudioPipeline:
             ssml = (
                 '<speak xmlns="http://www.w3.org/2001/10/synthesis" '
                 'xmlns:mstts="http://www.w3.org/2001/mstts" '
-                'version="1.0" xml:lang="fr-FR">'
+                'version="1.0" xml:lang="en-US">'
                 f'<voice name="{self.azure_voice}">'
                 '<mstts:silence type="Leading-exact" value="0"/>'
                 + "".join(seg_pieces) +
@@ -668,7 +681,7 @@ class AudioPipeline:
 
             ssml = (
                 '<speak xmlns="http://www.w3.org/2001/10/synthesis" '
-                'version="1.0" xml:lang="fr-FR">'
+                'version="1.0" xml:lang="en-US">'
                 f'<voice name="{self.azure_voice}">'
                 + pros +
                 '</voice></speak>'
@@ -694,7 +707,7 @@ class AudioPipeline:
             ssml = (
                 '<speak xmlns="http://www.w3.org/2001/10/synthesis" '
                 'xmlns:mstts="http://www.w3.org/2001/mstts" '
-                'version="1.0" xml:lang="fr-FR">'
+                'version="1.0" xml:lang="en-US">'
                 f'<voice name="{self.azure_voice}">'
                   '<mstts:silence type="Leading-exact" value="0"/>'
                   + pros_no_break +

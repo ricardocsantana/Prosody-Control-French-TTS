@@ -46,7 +46,7 @@ class SynchronizedSSMLPipeline:
         data_dir (Path): Chemin des données
         api_key (str): Clé API Azure pour la synthèse vocale
         region (str): Région Azure pour la synthèse vocale
-        voice (str): Voix Azure à utiliser (ex: fr-FR-HenriNeural)
+        voice (str): Voix Azure à utiliser (ex: en-US-AndrewNeural)
         style (str, optional): Style de voix à utiliser
         style_degree (int, optional): Degré d'intensité du style
         textgrid_folder (Path): Dossier contenant les fichiers TextGrid

@@ -9,14 +9,13 @@ from pathlib import Path
 # from pydub.utils import make_chunks
 from Preprocessing.merge_wav import merge_wav_from_folder # Import the merge function
 
-def main(dir_name, api_key, BDD_ssml_path, Out_dir, Pause_time_end_const, Pause_break_const): # Renamed BDD4_dir to BDD_ssml_path
+def main(dir_name, api_key, BDD_ssml_path, Out_dir, Pause_time_end_const, Pause_break_const, region='eastus'): # Renamed BDD4_dir to BDD_ssml_path
     """Effectue la synthèse vocale pour chaque chaîne SSML de segment fournie dans un DataFrame."""
     logger = logging.getLogger(__name__)
     
     results_dir = Path(Out_dir) / 'results' / dir_name
     temp_audio_dir = results_dir / "Temp" # Directory for individual segment wavs
     final_output_wav = results_dir / "OUT.wav"
-    region = 'francecentral'
 
     # Ensure temp dir exists (should be created by pipeline, but double-check)
     temp_audio_dir.mkdir(parents=True, exist_ok=True)
@@ -49,7 +48,7 @@ def main(dir_name, api_key, BDD_ssml_path, Out_dir, Pause_time_end_const, Pause_
 
     speech_config = speechsdk.SpeechConfig(subscription=api_key, region=region)
     # Assuming voice is defined in the SSML now, but set a default if needed
-    # speech_config.speech_synthesis_voice_name = "fr-FR-HenriNeural"
+    # speech_config.speech_synthesis_voice_name = "en-US-AndrewNeural"
 
     success_count = 0
     fail_count = 0

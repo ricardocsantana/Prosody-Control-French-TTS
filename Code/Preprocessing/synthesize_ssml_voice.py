@@ -43,7 +43,7 @@ def read_ssml_file(ssml_file_path):
         return None
 
 
-def clean_ssml_for_azure(ssml_text, voice="fr-FR-HenriNeural"):
+def clean_ssml_for_azure(ssml_text, voice="en-US-AndrewNeural"):
     """
     Nettoie et prépare le SSML pour le rendre compatible avec Azure Speech Services.
     
@@ -81,8 +81,8 @@ def clean_ssml_for_azure(ssml_text, voice="fr-FR-HenriNeural"):
                 ssml_text = start_part + voice_tag + end_part[:closing_speak_pos] + voice_end_tag + end_part[closing_speak_pos:]
     
     # S'assurer que xml:lang est présent
-    if 'xml:lang="fr-FR"' not in ssml_text and 'lang="fr-FR"' in ssml_text:
-        ssml_text = ssml_text.replace('lang="fr-FR"', 'xml:lang="fr-FR"')
+    if 'xml:lang="en-US"' not in ssml_text and 'lang="en-US"' in ssml_text:
+        ssml_text = ssml_text.replace('lang="en-US"', 'xml:lang="en-US"')
     
     return ssml_text
 
@@ -106,7 +106,7 @@ def extract_text_from_ssml(ssml_text):
     return text
 
 
-def create_simplified_ssml_from_text(text, voice="fr-FR-HenriNeural"):
+def create_simplified_ssml_from_text(text, voice="en-US-AndrewNeural"):
     """
     Crée un SSML minimal à partir d'un texte brut.
     
@@ -120,7 +120,7 @@ def create_simplified_ssml_from_text(text, voice="fr-FR-HenriNeural"):
         str: SSML minimal contenant uniquement le texte brut.
     """
     return (
-        '<speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="fr-FR">\n'
+        '<speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">\n'
         f'<voice name="{voice}">\n'
         f'{text}\n'
         '</voice>\n'
@@ -128,7 +128,7 @@ def create_simplified_ssml_from_text(text, voice="fr-FR-HenriNeural"):
     )
 
 
-def synthesize_with_simplified_ssml(ssml_text, output_file, speech_key, speech_region, voice="fr-FR-HenriNeural"):
+def synthesize_with_simplified_ssml(ssml_text, output_file, speech_key, speech_region, voice="en-US-AndrewNeural"):
     """
     Tente une synthèse vocale avec un SSML simplifié en cas d'échec du SSML complexe.
     
@@ -229,7 +229,7 @@ def synthesize_ssml(ssml_text, output_file, speech_key, speech_region, voice):
         return None
 
 
-def process_ssml_folder(ssml_folder, speech_key, speech_region, output_folder=None, voice="fr-FR-HenriNeural"):
+def process_ssml_folder(ssml_folder, speech_key, speech_region, output_folder=None, voice="en-US-AndrewNeural"):
     """
     Traite tous les fichiers SSML d'un dossier et génère les fichiers audio correspondants.
     
@@ -288,7 +288,7 @@ def process_ssml_folder(ssml_folder, speech_key, speech_region, output_folder=No
     return success_count, len(ssml_files)
 
 
-def main(speech_key, speech_region, ssml_folder, output_folder=None, voice="fr-FR-HenriNeural"):
+def main(speech_key, speech_region, ssml_folder, output_folder=None, voice="en-US-AndrewNeural"):
     # Change print to logger calls
     if speech_key == "votre_clé_azure_ici":
         logger.warning("ATTENTION: Vous devez remplacer 'votre_clé_azure_ici' par votre clé API Azure.")

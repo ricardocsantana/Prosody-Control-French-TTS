@@ -1,0 +1,43 @@
+ab_test:
+  margin_s: 15
+  num_pairs: 44
+  output_dir: Out/AB_test
+  target_duration_s: 60
+  voices: null
+azure_key_file: azure_key.txt
+azure_region: francecentral
+azure_voice_name: en-US-AndrewNeural
+code_dir: Code
+data_dir: Data/voice
+multiprocessing: true
+num_processes: 5
+out_dir: Out
+prosody_settings:
+  baseline_window: 10
+  end_punctuation_pause_ms: 500
+  inter_syntagme_pause_factor: 1
+  max_jump_percent: 8
+  pitch_lower_clip_factor: 0.7
+  pitch_offset_semitones: 5.0
+  pitch_semitones: 1.3
+  rate_percent: 10.0
+  slow_floor_per_sec: 2.0
+  smoothing_alpha: 0.2
+  threshold_duration_before_slowing_down: 1.0
+  volume_pct: 10.0
+silence:
+  keep_silence: 300
+  min_silence_len: 1000
+  silence_thresh: -50
+steps_to_run:
+- Align+Transcribe
+- Raw Synthesis
+- Measure & Build SSML
+- Synthesize+Merge
+- Export JSON
+- Final Transcribe
+- Compare Breaks
+voice_names:
+- EnglishTest
+whisper_device: cpu
+whisper_model: medium

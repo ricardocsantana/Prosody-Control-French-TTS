@@ -29,7 +29,7 @@ def load_models():
     model = whisperx.load_model("large-v2", device, compute_type="int8")
 
     align_model, metadata = whisperx.load_align_model(
-        language_code="fr",
+        language_code="en",
         device=device
     )
 
@@ -75,7 +75,7 @@ def process_file(audio_path, transcription_path, device, model, align_model, met
 
         result = model.transcribe(
             str(Path(audio_path).absolute()),
-            language="fr"
+            language="en"
         )
 
         result_aligned = whisperx.align(

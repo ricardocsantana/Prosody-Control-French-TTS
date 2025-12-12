@@ -3,15 +3,15 @@
 data_dir: Data/voice
 code_dir: Code
 out_dir: Out
-azure_key_file: ${AZURE_API_KEY}
+azure_key_file: azure_key.txt
 
 # Voice names to process (can be a single string or a list)
 voice_names:
-  - <your_voice_name_here>  # Replace with your voice name, e.g., "Voice1_EP01"
+  - EnglishTest
 
 # Azure TTS settings
-azure_voice_name: fr-FR-HenriNeural
-whisper_device: cuda:0
+azure_voice_name: en-US-AndrewNeural
+whisper_device: cpu
 whisper_model: medium
 azure_region: francecentral
 
